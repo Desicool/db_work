@@ -11,12 +11,6 @@
         <property name="deliveryId">
             <column name="deliveryID" sql-type="char(10)" length="10"/>
         </property>
-        <property name="receivePrinciple">
-            <column name="receivePrinciple" sql-type="char(10)" length="10"/>
-        </property>
-        <property name="sendPrinciple">
-            <column name="sendPrinciple" sql-type="char(10)" length="10" not-null="true"/>
-        </property>
         <property name="status">
             <column name="status" sql-type="int(11)"/>
         </property>
@@ -31,6 +25,12 @@
         </many-to-one>
         <many-to-one name="stationByReceiveStation" class="com.ecust.db_work.entity.Station">
             <column name="receiveStation" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="employeeByReceivePrinciple" class="com.ecust.db_work.entity.Employee">
+            <column name="receivePrinciple"/>
+        </many-to-one>
+        <many-to-one name="employeeBySendPrinciple" class="com.ecust.db_work.entity.Employee">
+            <column name="sendPrinciple" not-null="true"/>
         </many-to-one>
     </class>
 </hibernate-mapping>

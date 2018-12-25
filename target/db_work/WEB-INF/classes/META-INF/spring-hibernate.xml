@@ -36,8 +36,24 @@
                 <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop> <!--hibernate根据实体自动生成数据库表-->
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>   <!--指定数据库方言-->
                 <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>     <!--在控制台显示执行的数据库操作语句-->
-                <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>     <!--在控制台显示执行的数据哭操作语句（格式）-->
+                <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/db_work</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver
+                </prop>     <!--在控制台显示执行的数据哭操作语句（格式）-->
             </props>
+        </property>
+        <property name="mappingLocations">
+            <list>
+                <value>classpath:com/ecust/db_work/entity/Commonaddress.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Customer.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Deliveryinfo.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Employee.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Expressorder.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/OrderDelivery.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Payroll.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Payrolldetail.hbm.xml</value>
+                <value>classpath:com/ecust/db_work/entity/Station.hbm.xml</value>
+            </list>
         </property>
     </bean>
 

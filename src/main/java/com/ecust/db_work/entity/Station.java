@@ -1,16 +1,16 @@
 package com.ecust.db_work.entity;
 
-import javax.persistence.*;
-import java.util.Collection;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Station {
     private String stationId;
     private String address;
     private String phone;
-    private Collection<Deliveryinfo> deliveryinfosByStationId;
-    private Collection<Deliveryinfo> deliveryinfosByStationId_0;
-    private Collection<Employee> employeesByStationId;
+    private String name;
 
     @Id
     @Column(name = "stationID", nullable = false, length = 10)
@@ -42,6 +42,16 @@ public class Station {
         this.phone = phone;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, length = 10)
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -52,6 +62,7 @@ public class Station {
         if (stationId != null ? !stationId.equals(station.stationId) : station.stationId != null) return false;
         if (address != null ? !address.equals(station.address) : station.address != null) return false;
         if (phone != null ? !phone.equals(station.phone) : station.phone != null) return false;
+        if (name != null ? !name.equals(station.name) : station.name != null) return false;
 
         return true;
     }
@@ -61,33 +72,7 @@ public class Station {
         int result = stationId != null ? stationId.hashCode() : 0;
         result = 31 * result + (address != null ? address.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
+        result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "stationBySendStation")
-    public Collection<Deliveryinfo> getDeliveryinfosByStationId() {
-        return deliveryinfosByStationId;
-    }
-
-    public void setDeliveryinfosByStationId(Collection<Deliveryinfo> deliveryinfosByStationId) {
-        this.deliveryinfosByStationId = deliveryinfosByStationId;
-    }
-
-    @OneToMany(mappedBy = "stationByReceiveStation")
-    public Collection<Deliveryinfo> getDeliveryinfosByStationId_0() {
-        return deliveryinfosByStationId_0;
-    }
-
-    public void setDeliveryinfosByStationId_0(Collection<Deliveryinfo> deliveryinfosByStationId_0) {
-        this.deliveryinfosByStationId_0 = deliveryinfosByStationId_0;
-    }
-
-    @OneToMany(mappedBy = "stationByStationId")
-    public Collection<Employee> getEmployeesByStationId() {
-        return employeesByStationId;
-    }
-
-    public void setEmployeesByStationId(Collection<Employee> employeesByStationId) {
-        this.employeesByStationId = employeesByStationId;
     }
 }

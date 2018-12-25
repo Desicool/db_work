@@ -29,26 +29,5 @@
         <property name="sex">
             <column name="sex" sql-type="varchar(2)" length="2"/>
         </property>
-        <many-to-one name="stationByStationId" class="com.ecust.db_work.entity.Station">
-            <column name="stationID"/>
-        </many-to-one>
-        <set name="deliveryinfosByEmployeeId" inverse="true">
-            <key>
-                <column name="receivePrinciple"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
-        </set>
-        <set name="deliveryinfosByEmployeeId_0" inverse="true">
-            <key>
-                <column name="sendPrinciple" not-null="true"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
-        </set>
-        <set name="payrollsByEmployeeId" inverse="true">
-            <key>
-                <column name="employeeID"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Payroll"/>
-        </set>
     </class>
 </hibernate-mapping>

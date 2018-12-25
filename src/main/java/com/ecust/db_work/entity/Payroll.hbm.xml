@@ -14,11 +14,5 @@
         <many-to-one name="employeeByEmployeeId" class="com.ecust.db_work.entity.Employee">
             <column name="employeeID"/>
         </many-to-one>
-        <list name="payrolldetailsByPayrollId" inverse="true">
-            <key>
-                <column name="payrollID"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Payrolldetail"/>
-        </list>
     </class>
 </hibernate-mapping>

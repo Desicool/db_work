@@ -14,23 +14,8 @@
         <property name="phone">
             <column name="phone" sql-type="char(20)" length="20"/>
         </property>
-        <set name="deliveryinfosByStationId" inverse="true">
-            <key>
-                <column name="sendStation"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
-        </set>
-        <set name="deliveryinfosByStationId_0" inverse="true">
-            <key>
-                <column name="receiveStation" not-null="true"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
-        </set>
-        <set name="employeesByStationId" inverse="true">
-            <key>
-                <column name="stationID"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Employee"/>
-        </set>
+        <property name="name">
+            <column name="name" sql-type="varchar(10)" length="10"/>
+        </property>
     </class>
 </hibernate-mapping>

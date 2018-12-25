@@ -1,13 +1,12 @@
 package com.ecust.db_work.entity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "order-delivery", schema = "db_work", catalog = "")
 public class OrderDelivery {
     private String orderId;
-    private List<Deliveryinfo> deliveryInfoBydeliveryId;
+    private String deliveryId;
 
     @Id
     @Column(name = "orderID", nullable = false, length = 10)
@@ -19,6 +18,16 @@ public class OrderDelivery {
         this.orderId = orderId;
     }
 
+    @Basic
+    @Column(name = "deliveryID", nullable = false, length = 10)
+    public String getDeliveryId() {
+        return deliveryId;
+    }
+
+    public void setDeliveryId(String deliveryId) {
+        this.deliveryId = deliveryId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -27,21 +36,15 @@ public class OrderDelivery {
         OrderDelivery that = (OrderDelivery) o;
 
         if (orderId != null ? !orderId.equals(that.orderId) : that.orderId != null) return false;
+        if (deliveryId != null ? !deliveryId.equals(that.deliveryId) : that.deliveryId != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return orderId != null ? orderId.hashCode() : 0;
-    }
-
-    @OneToMany
-    public List<Deliveryinfo> getDeliveryInfoBydeliveryId() {
-        return deliveryInfoBydeliveryId;
-    }
-
-    public void setDeliveryInfoBydeliveryId(List<Deliveryinfo> deliveryInfoBydeliveryId) {
-        this.deliveryInfoBydeliveryId = deliveryInfoBydeliveryId;
+        int result = orderId != null ? orderId.hashCode() : 0;
+        result = 31 * result + (deliveryId != null ? deliveryId.hashCode() : 0);
+        return result;
     }
 }

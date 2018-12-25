@@ -23,7 +23,7 @@
         <property name="receiverName">
             <column name="receiverName" sql-type="varchar(5)" length="5"/>
         </property>
-        <many-to-one name="customerByCustomerId" class="com.ecust.db_work.entity.Customer">
+        <many-to-one name="expressOrderByCustomer" class="com.ecust.db_work.entity.Customer">
             <column name="customerID"/>
         </many-to-one>
     </class>

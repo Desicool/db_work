@@ -6,13 +6,13 @@ import javax.persistence.*;
 public class Deliveryinfo {
     private int id;
     private String deliveryId;
-    private String receivePrinciple;
-    private String sendPrinciple;
     private int status;
     private String additional;
     private int transferNum;
     private Station stationBySendStation;
     private Station stationByReceiveStation;
+    private Employee employeeByReceivePrinciple;
+    private Employee employeeBySendPrinciple;
 
     @Id
     @Column(name = "ID", nullable = false)
@@ -32,26 +32,6 @@ public class Deliveryinfo {
 
     public void setDeliveryId(String deliveryId) {
         this.deliveryId = deliveryId;
-    }
-
-    @Basic
-    @Column(name = "receivePrinciple", nullable = false, length = 10)
-    public String getReceivePrinciple() {
-        return receivePrinciple;
-    }
-
-    public void setReceivePrinciple(String receivePrinciple) {
-        this.receivePrinciple = receivePrinciple;
-    }
-
-    @Basic
-    @Column(name = "sendPrinciple", nullable = true, length = 10)
-    public String getSendPrinciple() {
-        return sendPrinciple;
-    }
-
-    public void setSendPrinciple(String sendPrinciple) {
-        this.sendPrinciple = sendPrinciple;
     }
 
     @Basic
@@ -95,10 +75,6 @@ public class Deliveryinfo {
         if (status != that.status) return false;
         if (transferNum != that.transferNum) return false;
         if (deliveryId != null ? !deliveryId.equals(that.deliveryId) : that.deliveryId != null) return false;
-        if (receivePrinciple != null ? !receivePrinciple.equals(that.receivePrinciple) : that.receivePrinciple != null)
-            return false;
-        if (sendPrinciple != null ? !sendPrinciple.equals(that.sendPrinciple) : that.sendPrinciple != null)
-            return false;
         if (additional != null ? !additional.equals(that.additional) : that.additional != null) return false;
 
         return true;
@@ -108,8 +84,6 @@ public class Deliveryinfo {
     public int hashCode() {
         int result = id;
         result = 31 * result + (deliveryId != null ? deliveryId.hashCode() : 0);
-        result = 31 * result + (receivePrinciple != null ? receivePrinciple.hashCode() : 0);
-        result = 31 * result + (sendPrinciple != null ? sendPrinciple.hashCode() : 0);
         result = 31 * result + status;
         result = 31 * result + (additional != null ? additional.hashCode() : 0);
         result = 31 * result + transferNum;
@@ -134,5 +108,25 @@ public class Deliveryinfo {
 
     public void setStationByReceiveStation(Station stationByReceiveStation) {
         this.stationByReceiveStation = stationByReceiveStation;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "receivePrinciple", referencedColumnName = "employeeID", nullable = false)
+    public Employee getEmployeeByReceivePrinciple() {
+        return employeeByReceivePrinciple;
+    }
+
+    public void setEmployeeByReceivePrinciple(Employee employeeByReceivePrinciple) {
+        this.employeeByReceivePrinciple = employeeByReceivePrinciple;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "sendPrinciple", referencedColumnName = "employeeID")
+    public Employee getEmployeeBySendPrinciple() {
+        return employeeBySendPrinciple;
+    }
+
+    public void setEmployeeBySendPrinciple(Employee employeeBySendPrinciple) {
+        this.employeeBySendPrinciple = employeeBySendPrinciple;
     }
 }

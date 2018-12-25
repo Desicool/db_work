@@ -8,11 +8,8 @@
         <id name="orderId">
             <column name="orderID" sql-type="char(10)" length="10"/>
         </id>
-        <list name="deliveryInfoBydeliveryId" inverse="true">
-            <key>
-                <column name="deliveryID"/>
-            </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
-        </list>
+        <property name="deliveryId">
+            <column name="deliveryID" sql-type="char(10)" length="10"/>
+        </property>
     </class>
 </hibernate-mapping>

@@ -11,7 +11,7 @@ public class Expressorder {
     private Date orderDate;
     private double payment;
     private String receiverName;
-    private Customer customerByCustomerId;
+    private Customer expressOrderByCustomer;
 
     @Id
     @Column(name = "orderNo", nullable = false, length = 10)
@@ -107,11 +107,11 @@ public class Expressorder {
 
     @ManyToOne
     @JoinColumn(name = "customerID", referencedColumnName = "customerID", nullable = false)
-    public Customer getCustomerByCustomerId() {
-        return customerByCustomerId;
+    public Customer getExpressOrderByCustomer() {
+        return expressOrderByCustomer;
     }
 
-    public void setCustomerByCustomerId(Customer customerByCustomerId) {
-        this.customerByCustomerId = customerByCustomerId;
+    public void setExpressOrderByCustomer(Customer expressOrderByCustomer) {
+        this.expressOrderByCustomer = expressOrderByCustomer;
     }
 }

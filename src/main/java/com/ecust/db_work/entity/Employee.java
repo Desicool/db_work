@@ -1,8 +1,10 @@
 package com.ecust.db_work.entity;
 
-import javax.persistence.*;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.sql.Date;
-import java.util.Collection;
 
 @Entity
 public class Employee {
@@ -14,10 +16,6 @@ public class Employee {
     private String job;
     private String phone;
     private String sex;
-    private Collection<Deliveryinfo> deliveryinfosByEmployeeId;
-    private Collection<Deliveryinfo> deliveryinfosByEmployeeId_0;
-    private Station stationByStationId;
-    private Collection<Payroll> payrollsByEmployeeId;
 
     @Id
     @Column(name = "employeeID", nullable = false, length = 10)
@@ -130,42 +128,5 @@ public class Employee {
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         result = 31 * result + (sex != null ? sex.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "employeeByReceivePrinciple")
-    public Collection<Deliveryinfo> getDeliveryinfosByEmployeeId() {
-        return deliveryinfosByEmployeeId;
-    }
-
-    public void setDeliveryinfosByEmployeeId(Collection<Deliveryinfo> deliveryinfosByEmployeeId) {
-        this.deliveryinfosByEmployeeId = deliveryinfosByEmployeeId;
-    }
-
-    @OneToMany(mappedBy = "employeeBySendPrinciple")
-    public Collection<Deliveryinfo> getDeliveryinfosByEmployeeId_0() {
-        return deliveryinfosByEmployeeId_0;
-    }
-
-    public void setDeliveryinfosByEmployeeId_0(Collection<Deliveryinfo> deliveryinfosByEmployeeId_0) {
-        this.deliveryinfosByEmployeeId_0 = deliveryinfosByEmployeeId_0;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "stationID", referencedColumnName = "stationID", nullable = false)
-    public Station getStationByStationId() {
-        return stationByStationId;
-    }
-
-    public void setStationByStationId(Station stationByStationId) {
-        this.stationByStationId = stationByStationId;
-    }
-
-    @OneToMany(mappedBy = "employeeByEmployeeId")
-    public Collection<Payroll> getPayrollsByEmployeeId() {
-        return payrollsByEmployeeId;
-    }
-
-    public void setPayrollsByEmployeeId(Collection<Payroll> payrollsByEmployeeId) {
-        this.payrollsByEmployeeId = payrollsByEmployeeId;
     }
 }

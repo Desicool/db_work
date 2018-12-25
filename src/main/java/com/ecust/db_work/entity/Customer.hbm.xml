@@ -5,25 +5,23 @@
 <hibernate-mapping>
 
     <class name="com.ecust.db_work.entity.Customer" table="customer" schema="db_work">
-        <id name="customerId">
-            <column name="customerID" sql-type="char(10)" length="10"/>
+        <id name="id">
+            <column name="ID" sql-type="int(11)"/>
         </id>
+        <property name="customerId">
+            <column name="customerID" sql-type="char(10)" length="10"/>
+        </property>
         <property name="name">
             <column name="name" sql-type="varchar(5)" length="5"/>
         </property>
         <property name="sex">
             <column name="sex" sql-type="varchar(2)" length="2"/>
         </property>
-        <list name="commonaddressesByCustomerId" inverse="true">
+        <list name="expressorderByCustomerId" inverse="true">
             <key>
                 <column name="customerID"/>
             </key>
-            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Commonaddress"/>
-        </list>
-        <list name="expressordersByCustomerId" inverse="true">
-            <key>
-                <column name="customerID"/>
-            </key>
+            <list-index column="ID"></list-index>
             <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Expressorder"/>
         </list>
     </class>

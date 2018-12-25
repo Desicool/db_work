@@ -5,13 +5,23 @@ import java.util.List;
 
 @Entity
 public class Customer {
+    private int id;
     private String customerId;
     private String name;
     private String sex;
-    private List<Commonaddress> commonaddressesByCustomerId;
-    private List<Expressorder> expressordersByCustomerId;
+    private List<Expressorder> expressorderByCustomerId;
 
     @Id
+    @Column(name = "ID", nullable = false)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Basic
     @Column(name = "customerID", nullable = false, length = 10)
     public String getCustomerId() {
         return customerId;
@@ -48,6 +58,7 @@ public class Customer {
 
         Customer customer = (Customer) o;
 
+        if (id != customer.id) return false;
         if (customerId != null ? !customerId.equals(customer.customerId) : customer.customerId != null) return false;
         if (name != null ? !name.equals(customer.name) : customer.name != null) return false;
         if (sex != null ? !sex.equals(customer.sex) : customer.sex != null) return false;
@@ -57,27 +68,19 @@ public class Customer {
 
     @Override
     public int hashCode() {
-        int result = customerId != null ? customerId.hashCode() : 0;
+        int result = id;
+        result = 31 * result + (customerId != null ? customerId.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (sex != null ? sex.hashCode() : 0);
         return result;
     }
 
-    @OneToMany(mappedBy = "customerByCustomerId")
-    public List<Commonaddress> getCommonaddressesByCustomerId() {
-        return commonaddressesByCustomerId;
+    @OneToMany(mappedBy = "expressOrderByCustomer")
+    public List<Expressorder> getExpressorderByCustomerId() {
+        return expressorderByCustomerId;
     }
 
-    public void setCommonaddressesByCustomerId(List<Commonaddress> commonaddressesByCustomerId) {
-        this.commonaddressesByCustomerId = commonaddressesByCustomerId;
-    }
-
-    @OneToMany(mappedBy = "customerByCustomerId")
-    public List<Expressorder> getExpressordersByCustomerId() {
-        return expressordersByCustomerId;
-    }
-
-    public void setExpressordersByCustomerId(List<Expressorder> expressordersByCustomerId) {
-        this.expressordersByCustomerId = expressordersByCustomerId;
+    public void setExpressorderByCustomerId(List<Expressorder> expressorderByCustomerId) {
+        this.expressorderByCustomerId = expressorderByCustomerId;
     }
 }

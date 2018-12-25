@@ -987,369 +987,386 @@
       <RefTableName>customer</RefTableName>
       <RefColNames>customerID</RefColNames>
     </foreign-key>
-    <column id="253" parent="237" name="customerID">
-      <Position>1</Position>
-      <DataType>char(10)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="254" parent="237" name="name">
-      <Position>2</Position>
-      <DataType>varchar(5)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="255" parent="237" name="sex">
-      <Position>3</Position>
-      <DataType>varchar(2)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="256" parent="237" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>customerID</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="257" parent="238" name="ID">
+    <column id="253" parent="237" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="238" name="deliveryID">
+    <column id="254" parent="237" name="customerID">
       <Position>2</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="238" name="sendStation">
+    <column id="255" parent="237" name="name">
+      <Position>3</Position>
+      <DataType>varchar(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="237" name="sex">
+      <Position>4</Position>
+      <DataType>varchar(2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="257" parent="237" name="customerID">
+      <ColNames>customerID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="258" parent="237" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="259" parent="238" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="260" parent="238" name="deliveryID">
+      <Position>2</Position>
+      <DataType>char(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="238" name="sendStation">
       <Position>3</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="238" name="receiveStation">
+    <column id="262" parent="238" name="receiveStation">
       <Position>4</Position>
       <DataType>char(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="238" name="receivePrinciple">
+    <column id="263" parent="238" name="receivePrinciple">
       <Position>5</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="262" parent="238" name="sendPrinciple">
+    <column id="264" parent="238" name="sendPrinciple">
       <Position>6</Position>
       <DataType>char(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="238" name="status">
+    <column id="265" parent="238" name="status">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="238" name="additional">
+    <column id="266" parent="238" name="additional">
       <Position>8</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="238" name="transferNum">
+    <column id="267" parent="238" name="transferNum">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="266" parent="238" name="deID">
+    <index id="268" parent="238" name="deID">
       <ColNames>deliveryID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="267" parent="238" name="ssID">
+    <index id="269" parent="238" name="ssID">
       <ColNames>sendStation</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="268" parent="238" name="rsID">
+    <index id="270" parent="238" name="rsID">
       <ColNames>receiveStation</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="269" parent="238" name="reID">
+    <index id="271" parent="238" name="reID">
       <ColNames>receivePrinciple</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="270" parent="238" name="seID">
+    <index id="272" parent="238" name="seID">
       <ColNames>sendPrinciple</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="271" parent="238" name="PRIMARY">
+    <key id="273" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="272" parent="238" name="deID">
+    <foreign-key id="274" parent="238" name="deID">
       <ColNames>deliveryID</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>order-delivery</RefTableName>
       <RefColNames>deliveryID</RefColNames>
     </foreign-key>
-    <foreign-key id="273" parent="238" name="ssID">
+    <foreign-key id="275" parent="238" name="ssID">
       <ColNames>sendStation</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>station</RefTableName>
       <RefColNames>stationID</RefColNames>
     </foreign-key>
-    <foreign-key id="274" parent="238" name="rsID">
+    <foreign-key id="276" parent="238" name="rsID">
       <ColNames>receiveStation</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>station</RefTableName>
       <RefColNames>stationID</RefColNames>
     </foreign-key>
-    <foreign-key id="275" parent="238" name="reID">
+    <foreign-key id="277" parent="238" name="reID">
       <ColNames>receivePrinciple</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>employee</RefTableName>
       <RefColNames>employeeID</RefColNames>
     </foreign-key>
-    <foreign-key id="276" parent="238" name="seID">
+    <foreign-key id="278" parent="238" name="seID">
       <ColNames>sendPrinciple</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>employee</RefTableName>
       <RefColNames>employeeID</RefColNames>
     </foreign-key>
-    <column id="277" parent="239" name="employeeID">
+    <column id="279" parent="239" name="employeeID">
       <Position>1</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="239" name="birthday">
+    <column id="280" parent="239" name="birthday">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="239" name="entryTime">
+    <column id="281" parent="239" name="entryTime">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="239" name="stationID">
+    <column id="282" parent="239" name="stationID">
       <Position>4</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="239" name="separationTime">
+    <column id="283" parent="239" name="separationTime">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="239" name="job">
+    <column id="284" parent="239" name="job">
       <Position>6</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="239" name="phone">
+    <column id="285" parent="239" name="phone">
       <Position>7</Position>
       <DataType>char(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="239" name="sex">
+    <column id="286" parent="239" name="sex">
       <Position>8</Position>
       <DataType>varchar(2)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="285" parent="239" name="sID">
+    <index id="287" parent="239" name="sID">
       <ColNames>stationID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="286" parent="239" name="PRIMARY">
+    <key id="288" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>employeeID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="287" parent="239" name="sID">
+    <foreign-key id="289" parent="239" name="sID">
       <ColNames>stationID</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>station</RefTableName>
       <RefColNames>stationID</RefColNames>
     </foreign-key>
-    <column id="288" parent="240" name="orderNo">
+    <column id="290" parent="240" name="orderNo">
       <Position>1</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="240" name="receiveAddress">
+    <column id="291" parent="240" name="receiveAddress">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="240" name="sentAddress">
+    <column id="292" parent="240" name="sentAddress">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="240" name="orderDate">
+    <column id="293" parent="240" name="orderDate">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="240" name="payment">
+    <column id="294" parent="240" name="payment">
       <Position>5</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="240" name="receiverName">
+    <column id="295" parent="240" name="receiverName">
       <Position>6</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="240" name="customerID">
+    <column id="296" parent="240" name="customerID">
       <Position>7</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="295" parent="240" name="cuID">
+    <index id="297" parent="240" name="cuID">
       <ColNames>customerID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="296" parent="240" name="PRIMARY">
+    <key id="298" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>orderNo</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="297" parent="240" name="cuID">
+    <foreign-key id="299" parent="240" name="cuID">
       <ColNames>customerID</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>customer</RefTableName>
       <RefColNames>customerID</RefColNames>
     </foreign-key>
-    <column id="298" parent="241" name="orderID">
+    <column id="300" parent="241" name="orderID">
       <Position>1</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="241" name="deliveryID">
+    <column id="301" parent="241" name="deliveryID">
       <Position>2</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="300" parent="241" name="deliveryID">
+    <index id="302" parent="241" name="deliveryID">
       <ColNames>deliveryID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="301" parent="241" name="PRIMARY">
+    <key id="303" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>orderID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="302" parent="242" name="payrollID">
+    <column id="304" parent="242" name="payrollID">
       <Position>1</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="242" name="employeeID">
+    <column id="305" parent="242" name="employeeID">
       <Position>2</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="242" name="payTime">
+    <column id="306" parent="242" name="payTime">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="305" parent="242" name="p_employeeID">
+    <index id="307" parent="242" name="p_employeeID">
       <ColNames>employeeID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="306" parent="242" name="PRIMARY">
+    <key id="308" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>payrollID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="307" parent="242" name="p_employeeID">
+    <foreign-key id="309" parent="242" name="p_employeeID">
       <ColNames>employeeID</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>employee</RefTableName>
       <RefColNames>employeeID</RefColNames>
     </foreign-key>
-    <column id="308" parent="243" name="ID">
+    <column id="310" parent="243" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="243" name="payrollID">
+    <column id="311" parent="243" name="payrollID">
       <Position>2</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="243" name="type">
+    <column id="312" parent="243" name="type">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="243" name="money">
+    <column id="313" parent="243" name="money">
       <Position>4</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="312" parent="243" name="pi_payrollID">
+    <index id="314" parent="243" name="pi_payrollID">
       <ColNames>payrollID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="313" parent="243" name="PRIMARY">
+    <key id="315" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="314" parent="243" name="pi_payrollID">
+    <foreign-key id="316" parent="243" name="pi_payrollID">
       <ColNames>payrollID</ColNames>
       <RefSchemaName>db_work</RefSchemaName>
       <RefTableName>payroll</RefTableName>
       <RefColNames>payrollID</RefColNames>
     </foreign-key>
-    <column id="315" parent="244" name="stationID">
+    <column id="317" parent="244" name="stationID">
       <Position>1</Position>
       <DataType>char(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="244" name="address">
+    <column id="318" parent="244" name="address">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="244" name="phone">
+    <column id="319" parent="244" name="phone">
       <Position>3</Position>
       <DataType>char(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="318" parent="244" name="PRIMARY">
+    <column id="320" parent="244" name="name">
+      <Position>4</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="321" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>stationID</ColNames>
       <Primary>1</Primary>
