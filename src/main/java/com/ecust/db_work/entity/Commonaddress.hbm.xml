@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.ecust.db_work.entity.Commonaddress" table="commonaddress" schema="db_work">
+        <id name="id">
+            <column name="ID" sql-type="int(11)"/>
+        </id>
+        <property name="customerId">
+            <column name="customerID" sql-type="char(10)" length="10"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="bit(1)"/>
+        </property>
+        <property name="address">
+            <column name="address" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="targetUser">
+            <column name="targetUser" sql-type="varchar(5)" length="5" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

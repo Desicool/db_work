@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.ecust.db_work.entity.Expressorder" table="expressorder" schema="db_work">
+        <id name="orderNo">
+            <column name="orderNo" sql-type="char(10)" length="10"/>
+        </id>
+        <property name="receiveAddress">
+            <column name="receiveAddress" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="sentAddress">
+            <column name="sentAddress" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="orderDate">
+            <column name="orderDate" sql-type="date"/>
+        </property>
+        <property name="payment">
+            <column name="payment" sql-type="double" precision="-1"/>
+        </property>
+        <property name="receiverName">
+            <column name="receiverName" sql-type="varchar(5)" length="5"/>
+        </property>
+        <many-to-one name="customerByCustomerId" class="com.ecust.db_work.entity.Customer">
+            <column name="customerID"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

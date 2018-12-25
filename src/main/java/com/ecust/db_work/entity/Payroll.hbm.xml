@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.ecust.db_work.entity.Payroll" table="payroll" schema="db_work">
+        <id name="payrollId">
+            <column name="payrollID" sql-type="char(10)" length="10"/>
+        </id>
+        <property name="payTime">
+            <column name="payTime" sql-type="date"/>
+        </property>
+        <many-to-one name="employeeByEmployeeId" class="com.ecust.db_work.entity.Employee">
+            <column name="employeeID"/>
+        </many-to-one>
+        <list name="payrolldetailsByPayrollId" inverse="true">
+            <key>
+                <column name="payrollID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Payrolldetail"/>
+        </list>
+    </class>
+</hibernate-mapping>

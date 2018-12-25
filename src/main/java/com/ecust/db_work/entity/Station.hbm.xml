@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.ecust.db_work.entity.Station" table="station" schema="db_work">
+        <id name="stationId">
+            <column name="stationID" sql-type="char(10)" length="10"/>
+        </id>
+        <property name="address">
+            <column name="address" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="phone">
+            <column name="phone" sql-type="char(20)" length="20"/>
+        </property>
+        <set name="deliveryinfosByStationId" inverse="true">
+            <key>
+                <column name="sendStation"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
+        </set>
+        <set name="deliveryinfosByStationId_0" inverse="true">
+            <key>
+                <column name="receiveStation" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
+        </set>
+        <set name="employeesByStationId" inverse="true">
+            <key>
+                <column name="stationID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Employee"/>
+        </set>
+    </class>
+</hibernate-mapping>

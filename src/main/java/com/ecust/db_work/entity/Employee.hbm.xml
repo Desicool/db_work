@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.ecust.db_work.entity.Employee" table="employee" schema="db_work">
+        <id name="employeeId">
+            <column name="employeeID" sql-type="char(10)" length="10"/>
+        </id>
+        <property name="birthday">
+            <column name="birthday" sql-type="date"/>
+        </property>
+        <property name="entryTime">
+            <column name="entryTime" sql-type="date"/>
+        </property>
+        <property name="stationId">
+            <column name="stationID" sql-type="char(10)" length="10"/>
+        </property>
+        <property name="separationTime">
+            <column name="separationTime" sql-type="date"/>
+        </property>
+        <property name="job">
+            <column name="job" sql-type="varchar(10)" length="10"/>
+        </property>
+        <property name="phone">
+            <column name="phone" sql-type="char(11)" length="11"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="varchar(2)" length="2"/>
+        </property>
+        <many-to-one name="stationByStationId" class="com.ecust.db_work.entity.Station">
+            <column name="stationID"/>
+        </many-to-one>
+        <set name="deliveryinfosByEmployeeId" inverse="true">
+            <key>
+                <column name="receivePrinciple"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
+        </set>
+        <set name="deliveryinfosByEmployeeId_0" inverse="true">
+            <key>
+                <column name="sendPrinciple" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Deliveryinfo"/>
+        </set>
+        <set name="payrollsByEmployeeId" inverse="true">
+            <key>
+                <column name="employeeID"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.ecust.db_work.entity.Payroll"/>
+        </set>
+    </class>
+</hibernate-mapping>
