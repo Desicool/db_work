@@ -1,6 +1,7 @@
 package com.ecust.db_work.Controller;
 
 import com.ecust.db_work.service.EmployeeServiceImpl;
+import com.ecust.db_work.utils.EmployeeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -16,7 +17,7 @@ public class EmployeeInfoPageController {
     @RequestMapping(value = "/searchEmployee.p",method= RequestMethod.POST)
     public ModelAndView searchEmployee(String searchStr, String searchType){
         ModelMap modelMap = new ModelMap();
-        modelMap.put("ret",employeeService.getAllEmployee());
+        modelMap.put("ret", EmployeeUtil.EmployeeToHTML(employeeService.getAllEmployee()));
         return new ModelAndView("employeeInfoPage",modelMap);
     }
 }

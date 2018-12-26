@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>员工信息</title>
+    <link rel="stylesheet" type="text/css" href="/css/InfoStyle.css">
 </head>
 <body>
     <form action="${pageContext.request.contextPath}/searchEmployee.p" method="post">
@@ -16,10 +17,11 @@
         <input type="radio" name="searchType" value="name">按姓名
         <input type="radio" name="searchType" value="station">按站点
     </form>
-    <fieldset>
+    <fieldset class="childFrame">
         <legend>
-            ${ret}
+            结果
         </legend>
+        ${ret}
     </fieldset>
 </body>
 </html>
