@@ -16,7 +16,7 @@ public class Employee {
     private String job;
     private String phone;
     private String sex;
-
+    private String name;
     @Id
     @Column(name = "employeeID", nullable = false, length = 10)
     public String getEmployeeId() {
@@ -97,6 +97,11 @@ public class Employee {
         this.sex = sex;
     }
 
+    @Basic
+    @Column(name = "name", nullable = false, length = 5)
+    public String getName(){return name;}
+
+    public void setName(String name){this.name = name;}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -25,6 +25,7 @@
         <property name="minPoolSize" value="1"/>       <!--最小连接数-->
         <property name="initialPoolSize" value="10"/>      <!--初始化连接池内的数据库连接-->
         <property name="maxIdleTime" value="20"/>  <!--最大空闲时间-->
+
     </bean>
 
     <!--配置session工厂-->
@@ -41,19 +42,7 @@
                 <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>     <!--在控制台显示执行的数据哭操作语句（格式）-->
             </props>
         </property>
-        <property name="mappingLocations">
-            <list>
-                <value>classpath:com/ecust/db_work/entity/Commonaddress.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Customer.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Deliveryinfo.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Employee.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Expressorder.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/OrderDelivery.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Payroll.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Payrolldetail.hbm.xml</value>
-                <value>classpath:com/ecust/db_work/entity/Station.hbm.xml</value>
-            </list>
-        </property>
+
     </bean>
 
     <!-- 事物管理器配置  -->

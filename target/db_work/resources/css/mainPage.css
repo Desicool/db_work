@@ -1,0 +1,18 @@
+#menu{
+    float:left;
+    width: 20%;
+    height: 100%;
+    padding:auto;
+}
+
+#childPageDiv{
+    width:auto;
+    overflow:hidden;
+    height:100%;
+}
+
+#MainView{
+    height:100%;
+    width:100%;
+    border:none;
+}
