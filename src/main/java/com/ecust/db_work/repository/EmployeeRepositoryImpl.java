@@ -53,7 +53,6 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
         getCurrentSession().flush();
     }
 
-    @Override
     public List<Employee> findByName(String name) {
         Criteria c = getCurrentSession().createCriteria(Employee.class).
                 add(Restrictions.like("name","%"+name+"%"));
