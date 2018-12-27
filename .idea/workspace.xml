@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a95c287-83e4-4049-bc34-f647e6c2df6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CustomerRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,7 +67,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
@@ -142,17 +138,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+            <state relative-caret-position="90">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/View/customerInfoPage.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="11" selection-end-column="69" />
+            <state relative-caret-position="486">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -235,14 +231,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CommonAddressRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CustomerRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css" />
       </list>
     </option>
   </component>
@@ -433,7 +429,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="178aecef-3990-4aa5-89f3-5cb6ffa95466" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545904992776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545908400442" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -603,12 +599,12 @@
       <workItem from="1545799375628" duration="4344000" />
       <workItem from="1545825933398" duration="15964000" />
       <workItem from="1545876123459" duration="5334000" />
-      <workItem from="1545881518634" duration="9502000" />
+      <workItem from="1545881518634" duration="10464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81683000" />
+    <option name="totallyTimeSpent" value="82645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1026,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1096,6 +1078,20 @@
             <element signature="method#CustomerListToHTML#0;class#CustomerUtil#0" />
             <element signature="method#CommonAddressToHTML#0;class#CustomerUtil#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
         </state>
       </provider>
     </entry>
