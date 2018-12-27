@@ -11,6 +11,7 @@ import java.util.List;
 public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private EmployeeRepositoryImpl employeeRepository;
+    @Override
     public List<Employee> getAllEmployee() {
         return employeeRepository.findByName("");
     }

@@ -2,6 +2,8 @@ package com.ecust.db_work.repository;
 
 import com.ecust.db_work.entity.Employee;
 
-public interface EmployeeRepository extends baseRepository<Employee,String> {
+import java.util.List;
 
+public interface EmployeeRepository extends baseRepository<Employee,String> {
+    List<Employee> findByName(String name);
 }
