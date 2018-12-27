@@ -9,14 +9,19 @@
 <html>
 <head>
     <title>员工信息</title>
+
+
     <link rel="stylesheet" type="text/css" href="/css/InfoStyle.css">
+
 </head>
 <body>
-    <form action="${pageContext.request.contextPath}/searchEmployee.p" method="post">
-        <input type="text" name="searchStr">    <input type="submit" value="Submit"><br>
-        <input type="radio" name="searchType" value="name">按姓名
+    <form action="searchEmployee.post" method="post">
+        <input type="text" class="str_input" name="searchStr">    <input class="submit_button" type="submit"><br>
+        <input type="radio" name="searchType" value="name" class="radio_button">按姓名
         <input type="radio" name="searchType" value="station">按站点
+
     </form>
+
     <fieldset class="childFrame">
         <legend>
             结果

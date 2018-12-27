@@ -14,7 +14,7 @@ public class EmployeeInfoPageController {
     @Autowired
     private EmployeeServiceImpl employeeService;
 
-    @RequestMapping(value = "/searchEmployee.p",method= RequestMethod.POST)
+    @RequestMapping(value = "searchEmployee.post",method= RequestMethod.POST)
     public ModelAndView searchEmployee(String searchStr, String searchType){
         ModelMap modelMap = new ModelMap();
         modelMap.put("ret", EmployeeUtil.EmployeeToHTML(employeeService.getAllEmployee()));

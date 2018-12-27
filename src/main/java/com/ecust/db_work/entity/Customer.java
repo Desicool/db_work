@@ -1,10 +1,11 @@
 package com.ecust.db_work.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Customer {
+public class Customer implements Serializable {
     private int id;
     private String customerId;
     private String name;

@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id = "menu">
-        <a href="/business" target="MainView">查询客户</a>
+        <a href="/customer" target="MainView">查询客户</a>
         <br/>
         <a href="/employee" target="MainView">查询员工</a>
     </div>
