@@ -87,7 +87,7 @@ public class CustomerUtil {
             ans += "<td>" + expressorder.getExpressOrderByCustomer().getName() + "</td>";
             ans += "<td>" + expressorder.getReceiveAddress()+"</td>";
             ans += "<td>" + expressorder.getReceiverName()+"</td>";
-            ans += "<td>" + expressorder.getOrderDate()+"'</td>";
+            ans += "<td>" + expressorder.getOrderDate()+"</td>";
             ans += "<td>" + expressorder.getPayment()+"</td>";
             ans += "</tr>";
         }

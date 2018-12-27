@@ -5,6 +5,7 @@ import com.ecust.db_work.service.SearchService;
 import com.ecust.db_work.service.SearchServiceImpl;
 import com.ecust.db_work.utils.CustomerUtil;
 import com.ecust.db_work.utils.EmployeeUtil;
+import com.ecust.db_work.utils.StationUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -40,14 +41,19 @@ public class MainpageController {
     public ModelAndView transferEmployee(){
         ModelMap modelMap = new ModelMap();
         modelMap.put("ret", EmployeeUtil.EmployeeToHTML(employeeService.getAllEmployee()));
-        //modelMap.put("page","employeeInfoPage");
-        //return new ModelAndView("employeeInfoPage",modelMap);
         return new ModelAndView("employeeInfoPage",modelMap);
+    }
+
+
+    @RequestMapping(value = "/station")
+    public ModelAndView transferStation(){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("ret", StationUtil.StationToHTML(searchService.findStation("",true)));
+        return new ModelAndView("stationInfoPage",modelMap);
     }
     @RequestMapping(value = "/login",method = RequestMethod.GET)
     public ModelAndView becomeCustomer(HttpServletResponse response, String id){
         response.addCookie(new Cookie("customerId",id));
-        //return showMyDiscounts(id);
         return null;
     }
 

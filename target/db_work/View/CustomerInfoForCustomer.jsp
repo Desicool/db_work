@@ -13,17 +13,17 @@
     <link rel="stylesheet" type="text/css" href="/css/InfoStyle.css">
 </head>
 <body>
-    <fieldset>
+    <fieldset class="detail_info">
         <legend>
             所有订单
         </legend>
         ${order}
     </fieldset>
-    <fieldset>
+    <fieldset class="detail_info">
         <legend>常用收件地址</legend>
         ${receiveAddress}
     </fieldset>
-    <fieldset>
+    <fieldset class="detail_info">
         <legend>常用寄件地址</legend>
         ${sendAddress}
     </fieldset>
