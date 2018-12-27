@@ -9,7 +9,8 @@ td {
     /*允许在单词内换行。*/
     word-break: break-word;
     /*设置宽度*/
-    width: 100px;
+    min-width: 60px;
+    width: max-content;
 }
 
 .childFrame{
@@ -30,4 +31,8 @@ td {
 .radio_button{
     font-size:large;
     margin-top:15px;
+}
+
+#address{
+    width:300px;
 }

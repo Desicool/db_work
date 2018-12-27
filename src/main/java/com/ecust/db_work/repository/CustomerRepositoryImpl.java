@@ -55,4 +55,10 @@ public class CustomerRepositoryImpl implements CustomerRepository {
                 add(Restrictions.like("name","%" + name + "%")).
                 uniqueResult();
     }
+
+    public Customer findByID(String ID){
+        return (Customer) getCurrentSession().createCriteria(Customer.class).
+                add(Restrictions.eq("customerID",ID)).
+                uniqueResult();
+    }
 }

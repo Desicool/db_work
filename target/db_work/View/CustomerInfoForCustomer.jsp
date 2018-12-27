@@ -9,15 +9,23 @@
 <html>
 <head>
     <title>CustomerInfoForCustomer</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/InfoStyle.css">
 </head>
 <body>
     <fieldset>
+        <legend>
+            所有订单
+        </legend>
+        ${order}
+    </fieldset>
+    <fieldset>
         <legend>常用收件地址</legend>
-        ${addressType1}
+        ${receiveAddress}
     </fieldset>
     <fieldset>
         <legend>常用寄件地址</legend>
-        ${addressType0}
+        ${sendAddress}
     </fieldset>
 </body>
 </html>

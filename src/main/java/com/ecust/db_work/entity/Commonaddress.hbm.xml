@@ -11,8 +11,8 @@
         <property name="customerId">
             <column name="customerID" sql-type="char(10)" length="10"/>
         </property>
-        <property name="type">
-            <column name="type" sql-type="bit(1)"/>
+        <property name="sendAddress">
+            <column name="sendAddress" sql-type="bit(1)"/>
         </property>
         <property name="address">
             <column name="address" sql-type="varchar(50)" length="50"/>

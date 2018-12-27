@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Commonaddress {
     private int id;
     private String customerId;
-    private boolean type;
+    private boolean sendAddress;
     private String address;
     private String targetUser;
 
@@ -34,13 +34,13 @@ public class Commonaddress {
     }
 
     @Basic
-    @Column(name = "type", nullable = false)
-    public boolean isType() {
-        return type;
+    @Column(name = "sendAddress", nullable = false)
+    public boolean isSendAddress() {
+        return sendAddress;
     }
 
-    public void setType(boolean type) {
-        this.type = type;
+    public void setSendAddress(boolean sendAddress) {
+        this.sendAddress = sendAddress;
     }
 
     @Basic
@@ -71,7 +71,7 @@ public class Commonaddress {
         Commonaddress that = (Commonaddress) o;
 
         if (id != that.id) return false;
-        if (type != that.type) return false;
+        if (sendAddress != that.sendAddress) return false;
         if (customerId != null ? !customerId.equals(that.customerId) : that.customerId != null) return false;
         if (address != null ? !address.equals(that.address) : that.address != null) return false;
         if (targetUser != null ? !targetUser.equals(that.targetUser) : that.targetUser != null) return false;
@@ -83,9 +83,10 @@ public class Commonaddress {
     public int hashCode() {
         int result = id;
         result = 31 * result + (customerId != null ? customerId.hashCode() : 0);
-        result = 31 * result + (type ? 1 : 0);
+        result = 31 * result + (sendAddress ? 1 : 0);
         result = 31 * result + (address != null ? address.hashCode() : 0);
         result = 31 * result + (targetUser != null ? targetUser.hashCode() : 0);
         return result;
     }
+
 }
