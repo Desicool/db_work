@@ -4,33 +4,4 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.ecust.db_work.entity.Deliveryinfo" table="deliveryinfo" schema="db_work">
-        <id name="id">
-            <column name="ID" sql-type="int(11)"/>
-        </id>
-        <property name="deliveryId">
-            <column name="deliveryID" sql-type="char(10)" length="10"/>
-        </property>
-        <property name="status">
-            <column name="status" sql-type="int(11)"/>
-        </property>
-        <property name="additional">
-            <column name="additional" sql-type="varchar(50)" length="50" not-null="true"/>
-        </property>
-        <property name="transferNum">
-            <column name="transferNum" sql-type="int(11)"/>
-        </property>
-        <many-to-one name="stationBySendStation" class="com.ecust.db_work.entity.Station">
-            <column name="sendStation"/>
-        </many-to-one>
-        <many-to-one name="stationByReceiveStation" class="com.ecust.db_work.entity.Station">
-            <column name="receiveStation" not-null="true"/>
-        </many-to-one>
-        <many-to-one name="employeeByReceivePrinciple" class="com.ecust.db_work.entity.Employee">
-            <column name="receivePrinciple"/>
-        </many-to-one>
-        <many-to-one name="employeeBySendPrinciple" class="com.ecust.db_work.entity.Employee">
-            <column name="sendPrinciple" not-null="true"/>
-        </many-to-one>
-    </class>
 </hibernate-mapping>
