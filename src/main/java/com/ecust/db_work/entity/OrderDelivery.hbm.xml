@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.ecust.db_work.entity.OrderDelivery" table="order-delivery" schema="db_work">
+    <class name="com.ecust.db_work.entity.OrderDelivery" table="`order-delivery`" schema="db_work">
         <id name="orderId">
             <column name="orderID" sql-type="char(10)" length="10"/>
         </id>

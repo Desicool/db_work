@@ -74,10 +74,10 @@ public class CustomerUtil {
         ret.add(receiveHTML);
         return ret;
     }
-
     public static String ExpressOrderToHTML(List<Expressorder> list){
         String ans="<table border =\"1\"><tr><th>订单编号</th><th>发出地</th>" +
-                "<th>发件人</th><th>收件地址</th><th>收件人</th><th>订单日期</th><th>订单金额</th></tr>";
+                "<th>发件人</th><th>收件地址</th><th>收件人</th><th>订单日期</th><th>订单金额</th>" +
+                "<th>运送情况</th></tr>";
         Iterator<Expressorder> iterator = list.iterator();
         while(iterator.hasNext()) {
             Expressorder expressorder = iterator.next();
@@ -89,6 +89,7 @@ public class CustomerUtil {
             ans += "<td>" + expressorder.getReceiverName()+"</td>";
             ans += "<td>" + expressorder.getOrderDate()+"</td>";
             ans += "<td>" + expressorder.getPayment()+"</td>";
+            ans += "<td><a href=\"deliveryDetail?orderID=" + expressorder.getOrderNo() + "\">详情..</a></td>";
             ans += "</tr>";
         }
         // ans = ans + "<a href='product?id=" + product.getProductId() + "'>查看商品详情</a><br>";

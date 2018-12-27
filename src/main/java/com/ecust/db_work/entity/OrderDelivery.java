@@ -3,7 +3,7 @@ package com.ecust.db_work.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "order-delivery", schema = "db_work", catalog = "")
+@Table(name = "`order-delivery`", schema = "db_work")
 public class OrderDelivery {
     private String orderId;
     private String deliveryId;
