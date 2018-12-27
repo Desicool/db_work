@@ -60,9 +60,4 @@ public class ExpressOrderRepositoryImpl implements ExpressOrderRepository {
         getCurrentSession().flush();
     }
 
-    public List<Expressorder> findByCustomerID(String customerID){
-        Criteria c = getCurrentSession().createCriteria(Expressorder.class);
-        c.add(Restrictions.eq("customerID",customerID));
-        return c.list() == null ? new ArrayList<>():c.list();
-    }
 }

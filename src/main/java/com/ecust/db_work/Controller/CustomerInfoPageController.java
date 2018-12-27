@@ -21,7 +21,7 @@ public class CustomerInfoPageController {
     @Autowired
     private CustomerServiceImpl customerService;
     @RequestMapping(value = "findCustomer.post",method= RequestMethod.POST)
-    public ModelAndView searchEmployee(String customerName){
+    public ModelAndView searchCustomer(String customerName){
         ModelMap modelMap = new ModelMap();
         Customer customer = searchService.findCustomerByName(customerName);
         if(customer != null)
@@ -35,6 +35,7 @@ public class CustomerInfoPageController {
         List<String> list = CustomerUtil.CommonAddressToHTML(customerService.getCommonAddress(customerID));
         modelMap.put("sendAddress",list.get(0));
         modelMap.put("receiveAddress",list.get(1));
+        modelMap.put("order",CustomerUtil.ExpressOrderToHTML(customerService.getExpressOrder(customerID)));
         return new ModelAndView("CustomerInfoForCustomer",modelMap);
     }
 }

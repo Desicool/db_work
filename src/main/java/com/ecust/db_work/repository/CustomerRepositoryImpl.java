@@ -58,7 +58,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 
     public Customer findByID(String ID){
         return (Customer) getCurrentSession().createCriteria(Customer.class).
-                add(Restrictions.eq("customerID",ID)).
+                add(Restrictions.eq("customerId",ID)).
                 uniqueResult();
     }
 }

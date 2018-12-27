@@ -2,14 +2,15 @@ package com.ecust.db_work.utils;
 
 import com.ecust.db_work.entity.Commonaddress;
 import com.ecust.db_work.entity.Customer;
+import com.ecust.db_work.entity.Expressorder;
+import com.sun.org.apache.bcel.internal.generic.RETURN;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class CustomerUtil {
-    public static String CustomerToHTML(Customer customer)
-    {
+    public static String CustomerToHTML(Customer customer) {
         String ans="<table border =\"1\"><tr><th>编号</th><th>姓名</th><th>性别</th><th>..</th></tr>";
         ans += "<tr>";
         ans += "<td>" + customer.getCustomerId()+"</td>";
@@ -21,8 +22,7 @@ public class CustomerUtil {
         ans += "</table>";
         return ans;
     }
-    public static String CustomerListToHTML(List<Customer> list)
-    {
+    public static String CustomerListToHTML(List<Customer> list) {
         String ans="<table border =\"1\"><tr><th>编号</th><th>姓名</th><th>性别</th><th>..</th></tr>";
         Iterator<Customer> iterator = list.iterator();
         while(iterator.hasNext()) {
@@ -73,5 +73,26 @@ public class CustomerUtil {
         ret.add(sendHTML);
         ret.add(receiveHTML);
         return ret;
+    }
+
+    public static String ExpressOrderToHTML(List<Expressorder> list){
+        String ans="<table border =\"1\"><tr><th>订单编号</th><th>发出地</th>" +
+                "<th>发件人</th><th>收件地址</th><th>收件人</th><th>订单日期</th><th>订单金额</th></tr>";
+        Iterator<Expressorder> iterator = list.iterator();
+        while(iterator.hasNext()) {
+            Expressorder expressorder = iterator.next();
+            ans += "<tr>";
+            ans += "<td>" + expressorder.getOrderNo() + "</td>";
+            ans += "<td>" + expressorder.getSentAddress() + "</td>";
+            ans += "<td>" + expressorder.getExpressOrderByCustomer().getName() + "</td>";
+            ans += "<td>" + expressorder.getReceiveAddress()+"</td>";
+            ans += "<td>" + expressorder.getReceiverName()+"</td>";
+            ans += "<td>" + expressorder.getOrderDate()+"'</td>";
+            ans += "<td>" + expressorder.getPayment()+"</td>";
+            ans += "</tr>";
+        }
+        // ans = ans + "<a href='product?id=" + product.getProductId() + "'>查看商品详情</a><br>";
+        ans += "</table>";
+        return ans;
     }
 }
