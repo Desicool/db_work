@@ -19,13 +19,10 @@ public class OrderServiceImpl implements  OrderService {
     @Override
     public List<Deliveryinfo> getDeliveryinfo(String orderID) {
         List<OrderDelivery> tmp = orderDeliveryRepository.findByOrderID(orderID);
-        List<Deliveryinfo> ret = new ArrayList<>();
+        List<String> deliveryID = new ArrayList<>();
         for(OrderDelivery item : tmp){
-            Deliveryinfo x = deliveryInfoRepository.findByDeliveryID(item.getDeliveryId());
-            if(x != null){
-                ret.add(x);
-            }
+            deliveryID.add(item.getDeliveryId());
         }
-        return ret;
+        return deliveryInfoRepository.findByDeliveryID(deliveryID);
     }
 }

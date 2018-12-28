@@ -3,12 +3,14 @@ package com.ecust.db_work.repository;
 import com.ecust.db_work.entity.Deliveryinfo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 import java.awt.geom.RectangularShape;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -61,8 +63,11 @@ public class DeliveryInfoRepositoryImpl implements DeliveryInfoRepository {
     }
 
     @Override
-    public Deliveryinfo findByDeliveryID(String DeliveryID) {
-        return (Deliveryinfo) getCurrentSession().createCriteria(Deliveryinfo.class).
-                add(Restrictions.eq("deliveryId",DeliveryID)).uniqueResult();
+    public List<Deliveryinfo> findByDeliveryID(List<String>deliveryID) {
+        if(deliveryID.size() <= 0)
+            return new ArrayList<>();
+        return getCurrentSession().createCriteria(Deliveryinfo.class).
+                add(Restrictions.in("deliveryId",deliveryID)).
+                addOrder(Order.asc("transferNum")).list();
     }
 }
