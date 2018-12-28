@@ -1,9 +1,7 @@
 package com.ecust.db_work.Controller;
 import com.ecust.db_work.service.EmployeeServiceImpl;
 import com.ecust.db_work.service.SearchServiceImpl;
-import com.ecust.db_work.utils.CustomerUtil;
-import com.ecust.db_work.utils.EmployeeUtil;
-import com.ecust.db_work.utils.StationUtil;
+import com.ecust.db_work.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -27,13 +25,15 @@ public class MainpageController {
     @RequestMapping(value = "mainPage", method = RequestMethod.GET)
     public ModelAndView transferMainPage(@CookieValue(value = "username",defaultValue = "") String username,
                                          @CookieValue(value = "usertype",defaultValue = "") String usertype) {
-        String customerPage = " <a href=\"/customer\" target=\"MainView\">查询客户</a> <br/>",
-                employeePage = "<a href=\"/employee\" target=\"MainView\">查询员工</a> <br> ",
-                stationPage = "<a href=\"/station\" target=\"MainView\">查询站点</a><br>",
-                quitLink = "<a href=\"/logout\">退出登录</a><br>";
+        String customerPage = " <a href=\"/customer\" target=\"MainView\">查询客户</a> <br/>";
+        String employeePage = "<a href=\"/employee\" target=\"MainView\">查询员工</a> <br> ";
+        String stationPage = "<a href=\"/station\" target=\"MainView\">查询站点</a><br>";
+        String transferPage = "<a href=\"/changeDelivery\" target=\"MainView\">执行中转</a><br>";
+        String checkPage = "<a href=\"/checkDelivery\" target=\"MainView\">确认送达</a><br>";
+        String quitLink = "<a href=\"/logout\">退出登录</a><br>";
         String loginMenu = "<a href=\"/login?username=姚迟亮&usertype=customer\">客户登录</a>\n" +
                 "<br/>\n" +
-                "<a href=\"/login?username=赵李洋&usertype=employee\">员工登录</a>\n" +
+                "<a href=\"/login?username=员工一号&usertype=employee\">员工登录</a>\n" +
                 "<br>\n";
         ModelMap modelMap = new ModelMap();
         if(username.equals("")){
@@ -48,6 +48,8 @@ public class MainpageController {
             else if(usertype.equals("employee")){
                 str += employeePage;
                 str += customerPage;
+                str += transferPage;
+                str += checkPage;
             }
             str += stationPage;
             str += quitLink;
@@ -77,7 +79,7 @@ public class MainpageController {
         return new ModelAndView("stationInfoPage",modelMap);
     }
     @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public ModelAndView customerLogin(HttpServletResponse response, String username,String usertype){
+    public ModelAndView Login(HttpServletResponse response, String username,String usertype){
         Cookie cookie = new Cookie("usertype", usertype);
         cookie.setPath("/");
         response.addCookie(cookie);
@@ -98,5 +100,23 @@ public class MainpageController {
             }
         }
         return transferMainPage("","");
+    }
+
+    @RequestMapping(value = "/changeDelivery", method = RequestMethod.GET)
+    public ModelAndView updateDelivery(){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("content", DeliveryInfoUtil.DeliveryInfoInsertHTML());
+        modelMap.put("action","/delivery.update");
+        return new ModelAndView("UpdateDataPage",modelMap);
+    }
+
+    @RequestMapping(value = "/checkDelivery", method = RequestMethod.GET)
+    public ModelAndView checkDelivery(){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("content", DeliveryInfoUtil.CheckDeliveryInfoHTML());
+        modelMap.put("action","/delivery.check");
+        return new ModelAndView("UpdateDataPage",modelMap);
     }
 }

@@ -18,4 +18,19 @@ public class CommonAddressUtil {
         ans += "<input type=\"text\" value=\""+String.valueOf(commonaddress.getId())+"\" name=\"id\" style=\"display:none\">";
         return ans;
     }
+
+    public static String CommonAddressInsertHTML(boolean isSendAddress){
+        String ans = "<table border=\"0\">" +
+                "<tr><td>地址：</td><td><input type=\"text\" class=\"text-input\" name=\"address\"></td></tr>";
+        if(isSendAddress)
+            ans += "<tr><td>发件人：</td>";
+        else
+            ans += "<tr><td>收件人：</td>";
+        ans += "<td><input type=\"text\" class=\"text-input\" name=\"user\"></td></tr>";
+        ans += "</table>";
+        ans += "<input type=\"submit\" value=\"提交修改\">";
+        ans += "<input type=\"text\" name=\"isSendAddress\" value=\"" + String.valueOf(isSendAddress) +
+                "\" style=\"display:none\">";
+        return ans;
+    }
 }

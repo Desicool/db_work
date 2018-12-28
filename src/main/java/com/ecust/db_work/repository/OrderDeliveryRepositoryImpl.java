@@ -8,6 +8,7 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -20,12 +21,12 @@ public class OrderDeliveryRepositoryImpl implements OrderDeliveryRepository {
         return this.sessionFactory.getCurrentSession();
     }
     @Override
-    public OrderDelivery load(String id) {
+    public OrderDelivery load(Integer id) {
         return (OrderDelivery) getCurrentSession().load(OrderDelivery.class,id);
     }
 
     @Override
-    public OrderDelivery get(String id) {
+    public OrderDelivery get(Integer id) {
         return (OrderDelivery) getCurrentSession().get(OrderDelivery.class,id);
     }
 
@@ -40,8 +41,8 @@ public class OrderDeliveryRepositoryImpl implements OrderDeliveryRepository {
     }
 
     @Override
-    public String save(OrderDelivery entity) {
-        return (String) getCurrentSession().save(entity);
+    public Integer save(OrderDelivery entity) {
+        return (Integer) getCurrentSession().save(entity);
     }
 
     @Override
@@ -50,7 +51,7 @@ public class OrderDeliveryRepositoryImpl implements OrderDeliveryRepository {
     }
 
     @Override
-    public void delete(String id) {
+    public void delete(Integer id) {
 
     }
 

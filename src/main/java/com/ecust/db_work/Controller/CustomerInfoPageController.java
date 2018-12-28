@@ -75,4 +75,15 @@ public class CustomerInfoPageController {
         modelMap.put("action","/address.update");
         return new ModelAndView("UpdateDataPage",modelMap);
     }
+
+
+    @RequestMapping(value = "/insertAddress",method = RequestMethod.GET)
+    public ModelAndView commitAddressUpdate(boolean isSendAddress,
+                                            @CookieValue(value = "username",defaultValue = "") String customerName){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("content", CommonAddressUtil.CommonAddressInsertHTML(isSendAddress));
+        modelMap.put("action","/address.insert");
+        return new ModelAndView("UpdateDataPage",modelMap);
+    }
 }

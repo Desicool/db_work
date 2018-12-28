@@ -48,7 +48,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     }
 
     public void flush() {
-
+        getCurrentSession().flush();
     }
     public Customer findByName(String name){
         return (Customer) getCurrentSession().createCriteria(Customer.class).

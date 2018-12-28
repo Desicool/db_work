@@ -5,9 +5,12 @@
 <hibernate-mapping>
 
     <class name="com.ecust.db_work.entity.OrderDelivery" table="`order-delivery`" schema="db_work">
-        <id name="orderId">
-            <column name="orderID" sql-type="char(10)" length="10"/>
+        <id name="id">
+            <column name="ID" sql-type="int(11)"/>
         </id>
+        <property name="orderId">
+            <column name="orderID" sql-type="char(10)" length="10"/>
+        </property>
         <property name="deliveryId">
             <column name="deliveryID" sql-type="char(10)" length="10"/>
         </property>

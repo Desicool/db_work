@@ -5,10 +5,22 @@ import javax.persistence.*;
 @Entity
 @Table(name = "`order-delivery`", schema = "db_work")
 public class OrderDelivery {
+    private int id;
     private String orderId;
     private String deliveryId;
 
     @Id
+    @Column(name = "ID", nullable = false)
+    @GeneratedValue
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Basic
     @Column(name = "orderID", nullable = false, length = 10)
     public String getOrderId() {
         return orderId;

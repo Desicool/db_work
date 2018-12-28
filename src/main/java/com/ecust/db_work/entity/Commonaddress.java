@@ -1,9 +1,6 @@
 package com.ecust.db_work.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Commonaddress {
@@ -15,6 +12,7 @@ public class Commonaddress {
 
     @Id
     @Column(name = "ID", nullable = false)
+    @GeneratedValue
     public int getId() {
         return id;
     }

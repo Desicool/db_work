@@ -5,4 +5,5 @@ import com.ecust.db_work.entity.Commonaddress;
 public interface CommonAddressService {
     Commonaddress findByID(int ID);
     Integer updateCommonAddress(String address,String user,String id);
+    Integer insertCommonAddress(String address,String user,String customerID,boolean isSendAddress);
 }

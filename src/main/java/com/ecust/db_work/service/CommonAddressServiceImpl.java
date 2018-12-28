@@ -32,4 +32,14 @@ public class CommonAddressServiceImpl implements CommonAddressService{
         }
         return commonaddress.getId();
     }
+
+    @Override
+    public Integer insertCommonAddress(String address, String user, String customerID, boolean isSendAddress) {
+        Commonaddress commonaddress = new Commonaddress();
+        commonaddress.setCustomerId(customerID);
+        commonaddress.setTargetUser(user);
+        commonaddress.setAddress(address);
+        commonaddress.setSendAddress(isSendAddress);
+        return commonAddressRepository.save(commonaddress);
+    }
 }

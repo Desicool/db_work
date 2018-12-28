@@ -92,7 +92,7 @@ public class Deliveryinfo {
     }
 
     @ManyToOne
-    @JoinColumn(name = "sendStation", referencedColumnName = "stationID", nullable = false)
+    @JoinColumn(name = "sendStation", referencedColumnName = "stationID", nullable = true)
     public Station getStationBySendStation() {
         return stationBySendStation;
     }
@@ -102,7 +102,7 @@ public class Deliveryinfo {
     }
 
     @ManyToOne
-    @JoinColumn(name = "receiveStation", referencedColumnName = "stationID")
+    @JoinColumn(name = "receiveStation", referencedColumnName = "stationID",nullable = true)
     public Station getStationByReceiveStation() {
         return stationByReceiveStation;
     }
@@ -112,7 +112,7 @@ public class Deliveryinfo {
     }
 
     @ManyToOne
-    @JoinColumn(name = "receivePrinciple", referencedColumnName = "employeeID", nullable = false)
+    @JoinColumn(name = "receivePrinciple", referencedColumnName = "employeeID",nullable = true)
     public Employee getEmployeeByReceivePrinciple() {
         return employeeByReceivePrinciple;
     }
@@ -122,7 +122,7 @@ public class Deliveryinfo {
     }
 
     @ManyToOne
-    @JoinColumn(name = "sendPrinciple", referencedColumnName = "employeeID")
+    @JoinColumn(name = "sendPrinciple", referencedColumnName = "employeeID",nullable = true)
     public Employee getEmployeeBySendPrinciple() {
         return employeeBySendPrinciple;
     }
