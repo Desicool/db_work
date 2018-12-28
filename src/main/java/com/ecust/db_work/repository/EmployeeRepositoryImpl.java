@@ -59,4 +59,19 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
                 add(Restrictions.like("name","%"+name+"%"));
         return c.list() == null?new ArrayList<Employee>():c.list();
     }
+
+    @Override
+    public Employee findByEmployeeID(String employeeID){
+        return (Employee) getCurrentSession().createCriteria(Employee.class).
+                add(Restrictions.eq("employeeId",employeeID)).uniqueResult();
+    }
+
+    @Override
+    public List<Employee> findByStatinID(List<String> stationID) {
+        if(stationID.size() <= 0)
+            return new ArrayList<>();
+        Criteria c = getCurrentSession().createCriteria(Employee.class).
+                add(Restrictions.in("stationId",stationID));
+        return c.list();
+    }
 }

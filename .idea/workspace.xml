@@ -7,21 +7,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a95c287-83e4-4049-bc34-f647e6c2df6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/PayrollRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/PayrollRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/View/PaymentDetailPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/StationInfoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/StationInfoPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/Controller/EmployeeInfoPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/Controller/EmployeeInfoPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/entity/Payroll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/entity/Payroll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/entity/Payrolldetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/entity/Payrolldetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/repository/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/repository/EmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/repository/EmployeeRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/repository/EmployeeRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/service/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/utils/DeliveryInfoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/utils/DeliveryInfoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecust/db_work/utils/EmployeeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecust/db_work/utils/EmployeeUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/db_work.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/View/DeliveryDetailPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/View/DeliveryDetailPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/View/employeeInfoPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/View/employeeInfoPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/Controller/EmployeeInfoPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/Controller/EmployeeInfoPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/entity/Payroll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/entity/Payroll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/entity/Payrolldetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/entity/Payrolldetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/repository/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/repository/EmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/repository/EmployeeRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/repository/EmployeeRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/service/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/utils/DeliveryInfoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/utils/DeliveryInfoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/utils/EmployeeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/db_work/WEB-INF/classes/com/ecust/db_work/utils/EmployeeUtil.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,10 +109,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepositoryImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="96">
+              <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/MainpageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/StationInfoPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="19" column="87" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/View/customerInfoPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,73 +187,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Expressorder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Deliveryinfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepositoryImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,12 +199,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+            <state relative-caret-position="180">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="91" column="48" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#CustomerToHTML#0;class#CustomerUtil#0" />
+                <element signature="method#CustomerListToHTML#0;class#CustomerUtil#0" />
+                <element signature="method#CommonAddressToHTML#0;class#CustomerUtil#0" />
               </folding>
             </state>
           </provider>
@@ -199,21 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/customerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/customerRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/employeeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/mainPage.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring-hibernate.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/View/customerInfoPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CommonAddressRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepository.java" />
@@ -223,33 +251,48 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CustomerRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/SearchService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/StationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/StationRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/SearchServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/StationUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/View/mainPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/View/stationInfoPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/MainpageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/StationInfoPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Expressorder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/View/PaymentDetailPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/PayrollRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/PayrollRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/MainpageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java" />
       </list>
     </option>
   </component>
@@ -281,7 +324,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="528" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -400,6 +443,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="db_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="db_work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="db_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="db_work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -423,7 +483,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="178aecef-3990-4aa5-89f3-5cb6ffa95466" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545923558695" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545982467126" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -594,11 +654,12 @@
       <workItem from="1545825933398" duration="15964000" />
       <workItem from="1545876123459" duration="5334000" />
       <workItem from="1545881518634" duration="16736000" />
+      <workItem from="1545962492303" duration="13644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93054000" />
+    <option name="totallyTimeSpent" value="106772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,7 +674,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48657718" visible="true" weight="0.27665246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48552337" visible="true" weight="0.27985075" />
       <window_info id="Structure" order="1" sideWeight="0.5124378" side_tool="true" weight="0.27665246" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -621,7 +682,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5124378" side_tool="true" weight="0.27665246" />
       <window_info id="Web" order="7" sideWeight="0.5124378" side_tool="true" weight="0.27665246" />
-      <window_info id="Persistence" order="8" sideWeight="0.51342285" side_tool="true" weight="0.27665246" />
+      <window_info id="Persistence" order="8" sideWeight="0.5144766" side_tool="true" weight="0.27985075" />
+      <window_info anchor="bottom" id="Dependency Viewer" weight="0.32962137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3363029" />
@@ -674,306 +736,20 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Expressorder.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Customer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/customerInfoPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/CustomerRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#get#0;class#CustomerRepositoryImpl#0" />
-            <element signature="e#967#968#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/baseRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/StationRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/StationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-hibernate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/mainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/MainpageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/stationInfoPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/StationInfoPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="23" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="85" lean-forward="true" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/SearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Deliveryinfo.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/StationUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -990,6 +766,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/InfoStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/mainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="51" />
+          <folding>
+            <element signature="e#2124#2125#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Deliveryinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/ExpressOrderRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1000,43 +866,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CustomerToHTML#0;class#CustomerUtil#0" />
-            <element signature="method#CustomerListToHTML#0;class#CustomerUtil#0" />
-            <element signature="method#CommonAddressToHTML#0;class#CustomerUtil#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="68" lean-forward="true" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        <state relative-caret-position="390">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1052,63 +885,300 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/DeliveryInfoRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="486">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/OrderDeliveryRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/stationInfoPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="246">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/PayrollRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Expressorder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/PayrollRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="396">
+          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Deliveryinfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/StationRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+        <state relative-caret-position="336">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/repository/EmployeeRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/service/EmployeeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Commonaddress.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Deliveryinfo.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="57" />
+          <folding>
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payroll.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="90" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Expressorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="108" column="33" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/OrderDelivery.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="420">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Customer.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="25" column="15" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Expressorder.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Payrolldetail.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="125" column="78" selection-start-line="125" selection-start-column="78" selection-end-line="125" selection-end-column="78" />
+          <folding>
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Employee.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/entity/Station.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/PaymentDetailPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/DeliveryDetailPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/DeliveryInfoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/EmployeeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/utils/CustomerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="91" column="48" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CustomerToHTML#0;class#CustomerUtil#0" />
+            <element signature="method#CustomerListToHTML#0;class#CustomerUtil#0" />
+            <element signature="method#CommonAddressToHTML#0;class#CustomerUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/employeeInfoPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="19" column="87" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/customerInfoPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/StationInfoPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/MainpageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/View/CustomerInfoForCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/EmployeeInfoPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ecust/db_work/Controller/CustomerInfoPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

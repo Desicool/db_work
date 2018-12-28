@@ -8,14 +8,14 @@
         <id name="id">
             <column name="ID" sql-type="int(11)"/>
         </id>
-        <property name="payrollId">
-            <column name="payrollID" sql-type="char(10)" length="10"/>
-        </property>
         <property name="type">
             <column name="type" sql-type="varchar(10)" length="10"/>
         </property>
         <property name="money">
             <column name="money" sql-type="double" precision="-1"/>
         </property>
+        <many-to-one name="payrollByPayrollId" class="com.ecust.db_work.entity.Payroll">
+            <column name="payrollID"/>
+        </many-to-one>
     </class>
 </hibernate-mapping>

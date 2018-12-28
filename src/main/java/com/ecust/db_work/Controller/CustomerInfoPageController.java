@@ -39,6 +39,7 @@ public class CustomerInfoPageController {
     public ModelAndView transferDetail(String customerID){
         ModelMap modelMap = new ModelMap();
         List<String> list = CustomerUtil.CommonAddressToHTML(customerService.getCommonAddress(customerID));
+        modelMap.put("returnLink","<a href=javascript:history.back(-1)>返回</a>");
         modelMap.put("sendAddress",list.get(0));
         modelMap.put("receiveAddress",list.get(1));
         modelMap.put("order",CustomerUtil.ExpressOrderToHTML(customerService.getExpressOrder(customerID)));

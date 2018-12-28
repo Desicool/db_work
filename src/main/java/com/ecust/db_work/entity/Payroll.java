@@ -2,13 +2,14 @@ package com.ecust.db_work.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 public class Payroll {
     private String payrollId;
     private Date payTime;
     private Employee employeeByEmployeeId;
-
+    private List<Payrolldetail> payrollDetailByPayrollId;
     @Id
     @Column(name = "payrollID", nullable = false, length = 10)
     public String getPayrollId() {
@@ -58,4 +59,13 @@ public class Payroll {
     public void setEmployeeByEmployeeId(Employee employeeByEmployeeId) {
         this.employeeByEmployeeId = employeeByEmployeeId;
     }
+    @OneToMany(mappedBy = "payrollByPayrollId")
+    public List<Payrolldetail> getPayrollDetailByPayrollId() {
+        return payrollDetailByPayrollId;
+    }
+
+    public void setPayrollDetailByPayrollId(List<Payrolldetail> payrollDetailByPayrollId) {
+        this.payrollDetailByPayrollId = payrollDetailByPayrollId;
+    }
+
 }

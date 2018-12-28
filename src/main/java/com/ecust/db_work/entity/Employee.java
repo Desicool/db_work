@@ -1,9 +1,6 @@
 package com.ecust.db_work.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
@@ -11,7 +8,7 @@ public class Employee {
     private String employeeId;
     private Date birthday;
     private Date entryTime;
-    private String stationId;
+    private Station stationByStationID;
     private Date separationTime;
     private String job;
     private String phone;
@@ -47,14 +44,15 @@ public class Employee {
         this.entryTime = entryTime;
     }
 
-    @Basic
-    @Column(name = "stationID", nullable = false, length = 10)
-    public String getStationId() {
-        return stationId;
+
+    @ManyToOne
+    @JoinColumn(name = "stationID", referencedColumnName = "stationID", nullable = false)
+    public Station getStationByStationID() {
+        return stationByStationID;
     }
 
-    public void setStationId(String stationId) {
-        this.stationId = stationId;
+    public void setStationByStationID(Station stationByStationID) {
+        this.stationByStationID = stationByStationID;
     }
 
     @Basic
@@ -112,7 +110,6 @@ public class Employee {
         if (employeeId != null ? !employeeId.equals(employee.employeeId) : employee.employeeId != null) return false;
         if (birthday != null ? !birthday.equals(employee.birthday) : employee.birthday != null) return false;
         if (entryTime != null ? !entryTime.equals(employee.entryTime) : employee.entryTime != null) return false;
-        if (stationId != null ? !stationId.equals(employee.stationId) : employee.stationId != null) return false;
         if (separationTime != null ? !separationTime.equals(employee.separationTime) : employee.separationTime != null)
             return false;
         if (job != null ? !job.equals(employee.job) : employee.job != null) return false;
@@ -127,7 +124,6 @@ public class Employee {
         int result = employeeId != null ? employeeId.hashCode() : 0;
         result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
         result = 31 * result + (entryTime != null ? entryTime.hashCode() : 0);
-        result = 31 * result + (stationId != null ? stationId.hashCode() : 0);
         result = 31 * result + (separationTime != null ? separationTime.hashCode() : 0);
         result = 31 * result + (job != null ? job.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);

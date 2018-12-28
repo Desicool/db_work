@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Delivery</title>
+    <link rel="stylesheet" type="text/css" href="/css/InfoStyle.css">
 </head>
 <body>
 

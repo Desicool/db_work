@@ -17,7 +17,7 @@
 <body>
     <form action="searchEmployee.post" method="post">
         <input type="text" class="str_input" name="searchStr">    <input class="submit_button" type="submit"><br>
-        <input type="radio" name="searchType" value="name" class="radio_button">按姓名
+        <input type="radio" name="searchType" value="name" class="radio_button" checked>按姓名
         <input type="radio" name="searchType" value="station">按站点
 
     </form>

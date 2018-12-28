@@ -17,7 +17,32 @@ public class EmployeeInfoPageController {
     @RequestMapping(value = "searchEmployee.post",method= RequestMethod.POST)
     public ModelAndView searchEmployee(String searchStr, String searchType){
         ModelMap modelMap = new ModelMap();
-        modelMap.put("ret", EmployeeUtil.EmployeeToHTML(employeeService.getAllEmployee()));
+        if(searchType.equals("name")){
+            modelMap.put("ret",EmployeeUtil.EmployeeToHTML(employeeService.getEmployeeByName(searchStr)));
+        }
+        else{
+            modelMap.put("ret",EmployeeUtil.EmployeeToHTML(employeeService.getEmployeeByStation(searchStr)));
+        }
         return new ModelAndView("employeeInfoPage",modelMap);
+    }
+
+
+    @RequestMapping(value = "showPayroll",method= RequestMethod.GET)
+    public ModelAndView showPayroll(String employeeID){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("title","工资发放情况");
+        modelMap.put("returnLink","<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("ret", EmployeeUtil.PayrollToHTML(employeeService.getPayrollByEmployeeId(employeeID)));
+        return new ModelAndView("PaymentDetailPage",modelMap);
+    }
+
+
+    @RequestMapping(value = "showPayrollDetail",method= RequestMethod.GET)
+    public ModelAndView showPayrollDetail(String payrollID){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("title","工资详情");
+        modelMap.put("returnLink","<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("ret", EmployeeUtil.PayrollDetailToHTML(employeeService.getPayrollDetailByPayrollID(payrollID)));
+        return new ModelAndView("PaymentDetailPage",modelMap);
     }
 }

@@ -23,7 +23,6 @@ public class DeliveryInfoUtil {
             ans += "<td>" + deliveryinfo.getAdditional()+"</td>";
             ans += "</tr>";
         }
-        // ans = ans + "<a href='product?id=" + product.getProductId() + "'>查看商品详情</a><br>";
         ans += "</table>";
         return ans;
     }

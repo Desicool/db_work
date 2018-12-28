@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface EmployeeRepository extends baseRepository<Employee,String> {
     List<Employee> findByName(String name);
+    Employee findByEmployeeID(String employeeID);
+    List<Employee> findByStatinID(List<String> stationID);
 }

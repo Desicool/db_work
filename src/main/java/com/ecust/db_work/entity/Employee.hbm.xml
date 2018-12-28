@@ -14,9 +14,9 @@
         <property name="entryTime">
             <column name="entryTime" sql-type="date"/>
         </property>
-        <property name="stationId">
-            <column name="stationID" sql-type="char(10)" length="10"/>
-        </property>
+        <many-to-one name="stationByStationID" class="com.ecust.db_work.entity.Station">
+            <column name="stationID"/>
+        </many-to-one>
         <property name="separationTime">
             <column name="separationTime" sql-type="date"/>
         </property>
