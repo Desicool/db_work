@@ -10,9 +10,9 @@
 <head>
 </head>
 <body>
+    ${returnLink}
     <form action="${action}" method="post">
         ${content}
-        <input type="submit" value="submit">
     </form>
 </body>
 </html>

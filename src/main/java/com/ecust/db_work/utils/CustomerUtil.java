@@ -48,15 +48,17 @@ public class CustomerUtil {
             else
                 receive.add(item);
         }
-        String sendHTML = "<table border =\"1\"><tr><th>编号</th><th>发件人</th><th>地址</th><th>修改</th></tr>",
-                receiveHTML="<table border =\"1\"><tr><th>编号</th><th>收件人</th><th>地址</th><th>修改</th></tr>";
+        String sendHTML = "<table border =\"1\"><tr><th>编号</th><th>发件人</th><th>地址</th>" +
+                "<th><a href=/insertAddress?isSendAddress=true>添加..</a></th></tr>",
+                receiveHTML="<table border =\"1\"><tr><th>编号</th><th>收件人</th><th>地址</th>" +
+                        "<th><a href=/insertAddress?isSendAddress=true>添加..</a></th></tr>";
         int cntsend = 1, cntreceive = 1;
         for(Commonaddress item : send){
             String tmp = "<tr>";
             tmp += "<td>" + (cntsend++) + "</td>";
             tmp += "<td>" + item.getTargetUser() + "</td>";
             tmp += "<td id=\"address\">" + item.getAddress() + "</td>";
-            tmp += "<td><a href=changeAddress?ID=" + String.valueOf(item.getId()) + ">编辑</a></td>";
+            tmp += "<td><a href=/changeAddress?ID=" + String.valueOf(item.getId()) + ">编辑</a></td>";
             tmp += "</tr>";
             sendHTML += tmp;
         }
@@ -66,7 +68,7 @@ public class CustomerUtil {
             tmp += "<td>" + (cntreceive++) + "</td>";
             tmp += "<td>" + item.getTargetUser() + "</td>";
             tmp += "<td id=\"address\">" + item.getAddress() + "</td>";
-            tmp += "<td><a href=changeAddress?ID=" + String.valueOf(item.getId()) + ">编辑</a></td>";
+            tmp += "<td><a href=/changeAddress?ID=" + String.valueOf(item.getId()) + ">编辑</a></td>";
             tmp += "</tr>";
             receiveHTML += tmp;
         }

@@ -1,0 +1,19 @@
+table{
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word; //表格固定布局
+}
+
+td {
+    border: 1px solid #000000;
+    /*允许在单词内换行。*/
+    word-break: break-word;
+    /*设置宽度*/
+    min-width: 60px;
+    width: max-content;
+    font-size: larger;
+}
+
+.text-input{
+    width: 150px;
+}

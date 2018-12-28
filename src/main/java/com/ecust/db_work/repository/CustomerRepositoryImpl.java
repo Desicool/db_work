@@ -16,7 +16,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     @Autowired
     private SessionFactory sessionFactory;
     public Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
     public Customer load(String id) {
         return (Customer) getCurrentSession().load(Customer.class,id);

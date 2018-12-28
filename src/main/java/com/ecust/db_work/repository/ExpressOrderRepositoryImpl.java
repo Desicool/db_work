@@ -15,7 +15,7 @@ public class ExpressOrderRepositoryImpl implements ExpressOrderRepository {
     @Autowired
     private SessionFactory sessionFactory;
     public Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
     @Override
     public Expressorder load(String id) {

@@ -41,6 +41,7 @@
                 <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
                 <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/db_work</prop>
                 <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>     <!--在控制台显示执行的数据哭操作语句（格式）-->
+                <prop key="current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
             </props>
         </property>
 

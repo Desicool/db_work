@@ -18,7 +18,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     @Autowired
     private SessionFactory sessionFactory;
     public Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
     public Employee load(String id) {
         return (Employee) getCurrentSession().load(Employee.class,id);

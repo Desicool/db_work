@@ -17,7 +17,7 @@ public class OrderDeliveryRepositoryImpl implements OrderDeliveryRepository {
     @Autowired
     private SessionFactory sessionFactory;
     public Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
     @Override
     public OrderDelivery load(String id) {

@@ -18,7 +18,7 @@ public class PayrollRepositoryImpl implements PayrollRepository {
     @Autowired
     private SessionFactory sessionFactory;
     private Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
     @Override
     public Payroll load(String id) {

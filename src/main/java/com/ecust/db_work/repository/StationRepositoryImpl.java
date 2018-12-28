@@ -17,7 +17,7 @@ public class StationRepositoryImpl implements StationRepository {
     @Autowired
     private SessionFactory sessionFactory;
     public Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
 
     @Override

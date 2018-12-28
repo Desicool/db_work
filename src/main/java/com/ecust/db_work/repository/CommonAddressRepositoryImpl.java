@@ -18,7 +18,7 @@ public class CommonAddressRepositoryImpl implements CommonAddressRepository {
     @Autowired
     private SessionFactory sessionFactory;
     public Session getCurrentSession(){
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
     @Override
     public Commonaddress load(Integer id) {
@@ -50,6 +50,10 @@ public class CommonAddressRepositoryImpl implements CommonAddressRepository {
         getCurrentSession().saveOrUpdate(entity);
     }
 
+    @Override
+    public void update(Commonaddress entity){
+        getCurrentSession().update(entity);
+    }
     @Override
     public void delete(Integer id) {
         getCurrentSession().delete(get(id));

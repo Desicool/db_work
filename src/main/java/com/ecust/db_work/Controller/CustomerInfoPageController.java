@@ -3,9 +3,11 @@ package com.ecust.db_work.Controller;
 import com.ecust.db_work.entity.Customer;
 import com.ecust.db_work.entity.Deliveryinfo;
 import com.ecust.db_work.repository.OrderDeliveryRepositoryImpl;
+import com.ecust.db_work.service.CommonAddressServiceImpl;
 import com.ecust.db_work.service.CustomerServiceImpl;
 import com.ecust.db_work.service.OrderService;
 import com.ecust.db_work.service.SearchServiceImpl;
+import com.ecust.db_work.utils.CommonAddressUtil;
 import com.ecust.db_work.utils.CustomerUtil;
 import com.ecust.db_work.utils.DeliveryInfoUtil;
 import com.ecust.db_work.utils.EmployeeUtil;
@@ -30,6 +32,8 @@ public class CustomerInfoPageController {
     private CustomerServiceImpl customerService;
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private CommonAddressServiceImpl commonAddressService;
     @RequestMapping(value = "findCustomer.post",method= RequestMethod.POST)
     public ModelAndView searchCustomer(String customerName){
         ModelMap modelMap = new ModelMap();
@@ -39,7 +43,7 @@ public class CustomerInfoPageController {
         return new ModelAndView("customerInfoPage",modelMap);
     }
 
-    @RequestMapping(value = "/customerDetail.jmp",method= RequestMethod.GET)
+    @RequestMapping(value = "/customerDetail.jmp")
     public ModelAndView transferDetail(@CookieValue(value = "usertype",defaultValue = "")String type,String customerID){
         ModelMap modelMap = new ModelMap();
         boolean isCustomer = type.equals("customer");
@@ -59,5 +63,16 @@ public class CustomerInfoPageController {
         modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
         modelMap.put("ret", DeliveryInfoUtil.DeliveryInfoToHTML(orderService.getDeliveryinfo(orderID)));
         return new ModelAndView("DeliveryDetailPage",modelMap);
+    }
+
+
+    @RequestMapping(value = "/changeAddress",method= RequestMethod.GET)
+    public ModelAndView updateAddress(String ID){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("content", CommonAddressUtil.CommonAddressUpdateHTML(
+                commonAddressService.findByID(Integer.valueOf(ID).intValue())));
+        modelMap.put("action","/address.update");
+        return new ModelAndView("UpdateDataPage",modelMap);
     }
 }

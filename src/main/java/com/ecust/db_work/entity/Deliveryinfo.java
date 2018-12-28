@@ -16,6 +16,7 @@ public class Deliveryinfo {
 
     @Id
     @Column(name = "ID", nullable = false)
+    @GeneratedValue
     public int getId() {
         return id;
     }
