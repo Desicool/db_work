@@ -15,11 +15,7 @@
 </head>
 <body>
     <div id = "menu">
-        <a href="/customer" target="MainView">查询客户</a>
-        <br/>
-        <a href="/employee" target="MainView">查询员工</a>
-        <br>
-        <a href="/station" target="MainView">查询站点</a>
+        ${leftMenu}
     </div>
     <div id="childPageDiv">
         <iframe name="MainView" id="MainView"></iframe>

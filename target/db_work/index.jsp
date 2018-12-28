@@ -9,8 +9,6 @@
 <html>
 <head>
     <title>Title</title>
+    <meta http-equiv="Refresh" content="0; URL=/mainPage">
 </head>
-<body>
-    <p>你好..</p>
-</body>
 </html>
