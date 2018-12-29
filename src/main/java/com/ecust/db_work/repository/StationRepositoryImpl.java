@@ -1,9 +1,11 @@
 package com.ecust.db_work.repository;
 
+import com.ecust.db_work.entity.Deliveryinfo;
 import com.ecust.db_work.entity.Station;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -73,5 +75,22 @@ public class StationRepositoryImpl implements StationRepository {
         Criteria c = getCurrentSession().createCriteria(Station.class);
         c.add(Restrictions.like("address","%" + address + "%"));
         return c.list();
+    }
+
+    public void update(Station station){
+        getCurrentSession().update(station);
+    }
+
+    public String generatedStationID() {
+        int tmp = ((Number)getCurrentSession().createCriteria(Station.class).setProjection(
+                Projections.rowCount()).uniqueResult()).intValue();
+        String ID = "S";
+        tmp++;
+        ID += tmp / 10000 % 10;
+        ID += tmp / 1000 % 10;
+        ID += tmp / 100 % 10;
+        ID += tmp / 10 % 10;
+        ID += tmp % 10;
+        return ID;
     }
 }

@@ -1,8 +1,10 @@
 package com.ecust.db_work.repository;
 
 import com.ecust.db_work.entity.Expressorder;
+import com.ecust.db_work.entity.Station;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -57,4 +59,17 @@ public class ExpressOrderRepositoryImpl implements ExpressOrderRepository {
         getCurrentSession().flush();
     }
 
+
+    public String generatedOrderID(){
+        int tmp = ((Number)getCurrentSession().createCriteria(Expressorder.class).setProjection(
+                Projections.rowCount()).uniqueResult()).intValue();
+        String ID = "O";
+        tmp++;
+        ID += tmp / 10000 % 10;
+        ID += tmp / 1000 % 10;
+        ID += tmp / 100 % 10;
+        ID += tmp / 10 % 10;
+        ID += tmp % 10;
+        return ID;
+    }
 }

@@ -18,7 +18,7 @@
     <input type="submit" class="submit_button" value="搜索" id="searchEmployee">
 </form>
     <fieldset class="childFrame">
-        <legend>结果</legend>
+        <legend>${title}</legend>
         ${result}
     </fieldset>
 </body>

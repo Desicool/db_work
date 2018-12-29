@@ -74,4 +74,17 @@ public class EmployeeUtil {
         ans += "</table>";
         return ans;
     }
+
+    public static String AddOrderHTML(){
+        String ans = "<table border=\"0\">" +
+                "<tr><td>送件地址：</td><td><input type=\"text\" class=\"text-input\" name=\"sentaddress\"></td></tr>";
+        ans += "<td>发件人</td><td><input type=\"text\" class=\"text-input\" name=\"customerName\"></td></tr>";
+        ans += "<td>收件地址</td><td><input type=\"text\" class=\"text-input\" name=\"receiveAddress\"></td></tr>";
+        ans += "<td>收件人</td><td><input type=\"text\" class=\"text-input\" name=\"receiverName\"></td></tr>";
+        ans += "<td>金额</td><td><input type=\"text\" class=\"text-input\" name=\"money\"></td></tr>";
+        ans += "</table>";
+        ans += "<input type=\"submit\" value=\"添加\">";
+        //ans += "<input type=\"text\" value=\""+station.getStationId()+"\" name=\"id\" style=\"display:none\">";
+        return ans;
+    }
 }

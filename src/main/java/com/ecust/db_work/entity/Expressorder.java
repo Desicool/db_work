@@ -12,7 +12,7 @@ public class Expressorder {
     private double payment;
     private String receiverName;
     private Customer expressOrderByCustomer;
-
+    private boolean status;
     @Id
     @Column(name = "orderNo", nullable = false, length = 10)
     public String getOrderNo() {
@@ -44,7 +44,7 @@ public class Expressorder {
     }
 
     @Basic
-    @Column(name = "orderDate", nullable = false)
+    @Column(name = "orderDate", nullable = true)
     public Date getOrderDate() {
         return orderDate;
     }
@@ -73,6 +73,10 @@ public class Expressorder {
         this.receiverName = receiverName;
     }
 
+    @Basic
+    @Column(name = "status", nullable =  false)
+    public  boolean isStatus(){return status;}
+    public void setStatus(boolean status){this.status = status;}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

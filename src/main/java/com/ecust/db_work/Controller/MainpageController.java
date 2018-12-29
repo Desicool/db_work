@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.persistence.Column;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,6 +31,7 @@ public class MainpageController {
         String stationPage = "<a href=\"/station\" target=\"MainView\">查询站点</a><br>";
         String transferPage = "<a href=\"/changeDelivery\" target=\"MainView\">执行中转</a><br>";
         String checkPage = "<a href=\"/checkDelivery\" target=\"MainView\">确认送达</a><br>";
+        String addOrderPage = "<a href=\"/addOrder\" target=\"MainView\">添加订单</a><br>";
         String quitLink = "<a href=\"/logout\">退出登录</a><br>";
         String loginMenu = "<a href=\"/login?username=姚迟亮&usertype=customer\">客户登录</a>\n" +
                 "<br/>\n" +
@@ -46,6 +48,7 @@ public class MainpageController {
                         searchService.findCustomerByName(username).getCustomerId() + "\" target=\"MainView\">个人信息</a><br>";
             }
             else if(usertype.equals("employee")){
+                str += addOrderPage;
                 str += employeePage;
                 str += customerPage;
                 str += transferPage;
@@ -73,9 +76,10 @@ public class MainpageController {
 
 
     @RequestMapping(value = "/station")
-    public ModelAndView transferStation(){
+    public ModelAndView transferStation(@CookieValue(value = "usertype",defaultValue = "")String isEmployee){
         ModelMap modelMap = new ModelMap();
-        modelMap.put("ret", StationUtil.StationToHTML(searchService.findStation("",true)));
+        modelMap.put("ret", StationUtil.StationToHTML(
+                searchService.findStation("",true),isEmployee.equals("employee")));
         return new ModelAndView("stationInfoPage",modelMap);
     }
     @RequestMapping(value = "/login",method = RequestMethod.GET)
@@ -117,6 +121,14 @@ public class MainpageController {
         modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
         modelMap.put("content", DeliveryInfoUtil.CheckDeliveryInfoHTML());
         modelMap.put("action","/delivery.check");
+        return new ModelAndView("UpdateDataPage",modelMap);
+    }
+    @RequestMapping(value = "/addOrder", method = RequestMethod.GET)
+    public ModelAndView addOrder(){
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("returnLink", "<a href=javascript:history.back(-1)>返回</a>");
+        modelMap.put("content", EmployeeUtil.AddOrderHTML());
+        modelMap.put("action","/order.add");
         return new ModelAndView("UpdateDataPage",modelMap);
     }
 }

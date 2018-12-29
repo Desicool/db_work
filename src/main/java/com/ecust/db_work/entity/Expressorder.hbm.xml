@@ -15,7 +15,7 @@
             <column name="sentAddress" sql-type="varchar(50)" length="50"/>
         </property>
         <property name="orderDate">
-            <column name="orderDate" sql-type="date"/>
+            <column name="orderDate" sql-type="date" not-null="true"/>
         </property>
         <property name="payment">
             <column name="payment" sql-type="double" precision="-1"/>
@@ -26,5 +26,8 @@
         <many-to-one name="expressOrderByCustomer" class="com.ecust.db_work.entity.Customer">
             <column name="customerID"/>
         </many-to-one>
+        <property name="status">
+            <column name="status" sql-type="bit" length="1"/>
+        </property>
     </class>
 </hibernate-mapping>

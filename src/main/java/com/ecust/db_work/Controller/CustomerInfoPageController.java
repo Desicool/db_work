@@ -37,6 +37,7 @@ public class CustomerInfoPageController {
         Customer customer = searchService.findCustomerByName(customerName);
         if(customer != null)
             modelMap.put("result", CustomerUtil.CustomerToHTML(customer));
+        modelMap.put("title", customerName + "的搜索结果");
         return new ModelAndView("customerInfoPage",modelMap);
     }
 

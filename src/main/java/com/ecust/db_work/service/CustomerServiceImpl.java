@@ -33,4 +33,8 @@ public class CustomerServiceImpl implements CustomerService {
         commonAddressRepository.delete(ID);
         commonAddressRepository.flush();
     }
+
+    public Customer findCustomerByName(String name){
+        return customerRepository.findByName(name);
+    }
 }
