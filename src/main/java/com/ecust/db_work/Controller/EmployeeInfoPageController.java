@@ -23,6 +23,7 @@ public class EmployeeInfoPageController {
         else{
             modelMap.put("ret",EmployeeUtil.EmployeeToHTML(employeeService.getEmployeeByStation(searchStr)));
         }
+        modelMap.put("title", searchStr + "的搜索结果");
         return new ModelAndView("employeeInfoPage",modelMap);
     }
 

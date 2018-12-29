@@ -28,6 +28,7 @@ public class StationInfoPageController {
         List<Station> list = searchService.findStation(searchStr,searchType.equals("name"));
         if(list != null)
             modelMap.put("ret", StationUtil.StationToHTML(list,searchType.equals("employee")));
+        modelMap.put("title", searchStr + " 的搜索结果");
         return new ModelAndView("stationInfoPage",modelMap);
     }
 

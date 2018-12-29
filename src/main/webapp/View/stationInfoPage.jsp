@@ -21,7 +21,7 @@
 
     <fieldset class="childFrame">
         <legend>
-            站点列表
+            ${title}
         </legend>
         ${ret}
     </fieldset>

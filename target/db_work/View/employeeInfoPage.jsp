@@ -24,7 +24,7 @@
 
     <fieldset class="childFrame">
         <legend>
-            结果
+            ${title}
         </legend>
         ${ret}
     </fieldset>
