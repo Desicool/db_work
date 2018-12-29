@@ -28,8 +28,8 @@ public class CommonAddressUtil {
             ans += "<tr><td>收件人：</td>";
         ans += "<td><input type=\"text\" class=\"text-input\" name=\"user\"></td></tr>";
         ans += "</table>";
-        ans += "<input type=\"submit\" value=\"提交修改\">";
-        ans += "<input type=\"text\" name=\"isSendAddress\" value=\"" + String.valueOf(isSendAddress) +
+        ans += "<input type=\"submit\" value=\"添加\">";
+        ans += "<input type=\"text\" name=\"isSendAddress\" value=\"" + isSendAddress +
                 "\" style=\"display:none\">";
         return ans;
     }

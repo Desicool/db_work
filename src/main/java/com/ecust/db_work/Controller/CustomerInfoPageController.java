@@ -3,10 +3,7 @@ package com.ecust.db_work.Controller;
 import com.ecust.db_work.entity.Customer;
 import com.ecust.db_work.entity.Deliveryinfo;
 import com.ecust.db_work.repository.OrderDeliveryRepositoryImpl;
-import com.ecust.db_work.service.CommonAddressServiceImpl;
-import com.ecust.db_work.service.CustomerServiceImpl;
-import com.ecust.db_work.service.OrderService;
-import com.ecust.db_work.service.SearchServiceImpl;
+import com.ecust.db_work.service.*;
 import com.ecust.db_work.utils.CommonAddressUtil;
 import com.ecust.db_work.utils.CustomerUtil;
 import com.ecust.db_work.utils.DeliveryInfoUtil;
@@ -85,5 +82,13 @@ public class CustomerInfoPageController {
         modelMap.put("content", CommonAddressUtil.CommonAddressInsertHTML(isSendAddress));
         modelMap.put("action","/address.insert");
         return new ModelAndView("UpdateDataPage",modelMap);
+    }
+
+    @RequestMapping(value = "/deleteAddress",method = RequestMethod.GET)
+    public ModelAndView deleteAddress(@CookieValue(value = "username",defaultValue = "") String customerName,int ID){
+        ModelMap modelMap = new ModelMap();
+        customerService.deleteCommonAddress(ID);
+        String idd = searchService.findCustomerByName(customerName).getCustomerId();
+        return new ModelAndView("redirect:customerDetail.jmp?customerID=" + idd,modelMap);
     }
 }

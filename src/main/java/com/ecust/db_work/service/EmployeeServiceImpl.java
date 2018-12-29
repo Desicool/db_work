@@ -38,11 +38,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> getEmployeeByStation(String staionName) {
         List<Station> list = stationRepository.findByName(staionName);
-        List<String> tmp = new ArrayList<>();
-        for(Station station : list){
-            tmp.add(station.getStationId());
-        }
-        return employeeRepository.findByStatinID(tmp);
+        return employeeRepository.findByStatin(list);
     }
 
     @Override

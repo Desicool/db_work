@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -64,7 +65,7 @@ public class StationRepositoryImpl implements StationRepository {
     public List<Station> findByName(String name) {
         Criteria c = getCurrentSession().createCriteria(Station.class);
         c.add(Restrictions.like("name","%" + name + "%"));
-        return c.list();
+        return c.list() == null? new ArrayList<>() : c.list();
     }
 
     @Override

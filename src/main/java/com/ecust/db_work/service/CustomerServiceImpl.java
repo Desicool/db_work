@@ -27,4 +27,10 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Expressorder> getExpressOrder(String customerID){
         return customerRepository.findByID(customerID).getExpressorderByCustomerId();
     }
+
+    @Override
+    public void deleteCommonAddress(int ID){
+        commonAddressRepository.delete(ID);
+        commonAddressRepository.flush();
+    }
 }

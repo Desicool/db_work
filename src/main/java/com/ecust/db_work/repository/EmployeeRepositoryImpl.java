@@ -1,6 +1,7 @@
 package com.ecust.db_work.repository;
 
 import com.ecust.db_work.entity.Employee;
+import com.ecust.db_work.entity.Station;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -67,11 +68,11 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     }
 
     @Override
-    public List<Employee> findByStatinID(List<String> stationID) {
-        if(stationID.size() <= 0)
+    public List<Employee> findByStatin(List<Station> station) {
+        if(station.size() <= 0)
             return new ArrayList<>();
         Criteria c = getCurrentSession().createCriteria(Employee.class).
-                add(Restrictions.in("stationId",stationID));
+                add(Restrictions.in("stationByStationID",station));
         return c.list();
     }
 }

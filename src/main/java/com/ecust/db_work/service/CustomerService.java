@@ -8,4 +8,5 @@ import java.util.List;
 public interface CustomerService {
     List<Commonaddress> getCommonAddress(String customerName);
     List<Expressorder> getExpressOrder(String customerID);
+    void deleteCommonAddress(int ID);
 }
